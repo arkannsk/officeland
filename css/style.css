@@ -1,0 +1,247 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    min-width: 1195px;
+    line-height: 1;
+    font-family: 'Montserrat', arial, sans-serif;
+    font-size: 1em;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+body {
+
+    background: #F1F1F1;
+
+}
+
+.container {
+    min-width: 1195px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.header-top {
+    height: 59px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+
+.header-top-left{
+    margin-left: 20px;
+}
+
+.header-top-left__city{
+    padding-top: 17px;
+    text-transform: uppercase;
+}
+
+.header-top-center{
+    display: flex;
+    flex-direction: row;
+}
+
+.header-top-center__button{
+    text-align: center;
+    margin-left: 1px;
+    padding: 25px 15px;
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    color:#fff;
+}
+
+
+.header-top-center__sum{
+    padding: 25px 15px;
+}
+
+.header-top-right{
+    font-size: 1.5em;
+    font-weight: bold;
+    padding-top: 18px;
+    margin-right: 20px;
+}
+
+.button-numeric-notification{
+    border-radius: 50%;
+    background-color: #E6006F;
+    padding: 5px;
+    position: relative;
+    top: -15px;
+    left: -15px;
+}
+
+.header-search {
+    height: 60px;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+
+}
+.header-search-left{
+    flex: 0 0 20%;
+    margin: 0 5px;
+}
+.header-search-right{
+    flex: 1 0 25%;
+    text-align: center;
+    padding: 5px;
+}
+
+.header-search-right__input{
+    width: 830px;
+    border-radius: 0;
+    padding: 10px;
+    border: 1px solid #294272;
+}
+
+.header-search-right__button-search{
+    position: relative;
+    right: 5px;
+    text-align: center;
+    padding: 11px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color:#fff;
+}
+.middle{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+}
+
+.middle-left{
+    flex: 0 0 20%;
+}
+
+.middle-left__head{
+    font-size: 1.3em;
+    text-align: center;
+    font-weight: bold;
+    background-color: #294272;
+    padding: 10px;
+    text-transform: uppercase;
+    color:#fff;
+}
+
+
+.catalog>li{
+    line-height: 1.1em;
+}
+
+.catalog>li>a{
+    color: #000;
+    display: block;
+    text-decoration: none;
+    padding: 10px 5px;
+    text-transform: uppercase;
+}
+.catalog>li>a:hover{
+    background-color: #E6006F;
+    color: #FFF;
+}
+
+.middle-right{
+    margin-left: 20px;
+    padding: 5px;
+    flex: 1 0 20%;
+    text-align: center;
+}
+
+.main-menu>li{
+    display: inline-block;
+    border-right: 1px solid #DADADA;
+    padding: 10px;
+
+}
+.main-menu>li:last-child{
+    border-right: none;
+}
+.main-menu>li>a{
+    font-size: 1.15em;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 5px 15px;
+    color: black;
+    margin: 0 7px;
+}
+.main-menu>li>a:hover{
+    background-color: #E6006F;
+    color: #fff;
+}
+
+.middle-right-slider{
+    margin-top: 20px;
+    min-height: 288px;
+}
+
+.middle-right-goods-slider{
+    width: 955px;
+    margin: 20px auto;
+}
+.goods-item{
+    display: inline-block;
+    float: left;
+    margin-left: 15px;
+    background-color: #ffffff;
+    width: 215px;
+    height: 289px;
+}
+
+.text-blue{
+    color: #294272;
+}
+.button-blue{
+    background-color: #294272;
+}
+.button-pink{
+    background-color: #E6006F;
+}
