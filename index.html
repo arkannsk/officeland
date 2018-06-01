@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="http://allfont.ru/allfont.css?fonts=montserrat" rel="stylesheet" type="text/css"/>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
@@ -25,23 +25,20 @@
                 <!-- TODO Меню городов -->
             </div>
             <div class="header-top-center">
-                <a class="header-top-center__button button-blue" href="#">Войти</a>
-                <a class="header-top-center__button button-blue" href="#">Регистрация</a>
-                <p class="header-top-center__button">
-                    <a href="#"><i class="material-icons">star_border</i></a>
-                    <span class="button-numeric-notification">42</span></p>
-                <p class="header-top-center__button">
-                    <a href="#"><i class="material-icons">shopping_cart</i></a>
-                    <span class="button-numeric-notification">13</span></p>
-                <!-- TODO Иконки -->
+                <a class="header-top-center__button button-blue grow-down-button" href="#">Войти</a>
+                <a class="header-top-center__button button-blue grow-down-button" href="#">Регистрация</a>
+                <a class="header-top-center__favorite-button icon-button" href="#"><i class="material-icons">star_border</i>
+                    <span class="button-numeric-notification">42</span></a>
+                <a class="header-top-center__cart-button icon-button" href="#"><i class="material-icons">shopping_cart</i>
+                    <span class="button-numeric-notification">13</span></a>
                 <p class="header-top-center__sum text-blue">101 250 р.</p>
-                <a class="header-top-center__button button-pink" href="#">Оформить заказ</a>
+                <a class="header-top-center__complete-order-button button-pink" href="#">Оформить заказ</a>
             </div>
             <div class="header-top-right">
                 <p><span class="text-blue">8 383</span> 201 84 21</p>
             </div>
         </div>
-
+        <div class="clear"></div>
         <div class="header-search">
             <div class="header-search-left"><a href="#" class="logo"><img src="img/logo.png" alt="логотип"/></a></div>
             <div class="header-search-right">
@@ -79,10 +76,10 @@
 
             <div class="middle-right-slider">
                 <div>
-                <img src="img/slider.jpg" alt="слайдер акций">
+                    <img src="img/slider.jpg" alt="слайдер акций">
                 </div>
             </div>
-            <div class="owl-carousel middle-right-goods-slider" >
+            <div class="owl-carousel middle-right-goods-slider">
                 <div class="goods-item">
                     <div class="goods-item-discount">
                         <p>Скидка</p>
@@ -133,7 +130,7 @@
                         <p class="goods-item-popular__item2">продаж</p>
                     </div>
                     <div class="goods-item-image"><img src="img/item4.jpg" alt=""></div>
-                    <a href="#" class="goods-item__description">Подарочontainer_idный нож VICTORINOX «Handyman»</a>
+                    <a href="#" class="goods-item__description">Подарочный нож VICTORINOX «Handyman»</a>
                     <div class="goods-item-bottom">
                         <p class="goods-item-bottom__old-price text-pink">6693.50 р.</p>
                         <p class="goods-item-bottom__price">6024.15 р.</p>
@@ -191,7 +188,7 @@
                         <p class="goods-item-popular__item2">продаж</p>
                     </div>
                     <div class="goods-item-image"><img src="img/item4.jpg" alt=""></div>
-                    <a href="#" class="goods-item__description">Подарочontainer_idный нож VICTORINOX «Handyman»</a>
+                    <a href="#" class="goods-item__description">Подарочный нож VICTORINOX «Handyman»</a>
                     <div class="goods-item-bottom">
                         <p class="goods-item-bottom__old-price text-pink">6693.50 р.</p>
                         <p class="goods-item-bottom__price">6024.15 р.</p>
@@ -282,15 +279,15 @@
 <script src="js/jquery-3.3.1.min.js"></script>
 <script src="js/owl.carousel.min.js"></script>
 <script>
-    $(document).ready(function(){
+    $(document).ready(function () {
         $(".owl-carousel").owlCarousel({
-             margin : 10,
+            margin: 10,
             autoWidth: true,
             autoHeight: true,
             loop: true,
             // Navigation
-            nav : true,
-            navText : ["<img src=\"img/arrow_left.png\">","<img src=\"img/arrow_right.png\">"],
+            nav: true,
+            navText: ["<img src=\"img/arrow_left.png\">", "<img src=\"img/arrow_right.png\">"]
         });
     });
 </script>
