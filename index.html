@@ -6,6 +6,8 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="http://allfont.ru/allfont.css?fonts=montserrat" rel="stylesheet" type="text/css"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+          rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <title>Office Land</title>
 </head>
@@ -14,14 +16,21 @@
     <div class="header">
         <div class="header-top">
             <div class="header-top-left">
-                <p class="header-top-left__city">Новосибирск</p>
+
+                <p class="header-top-left__city"><i class="material-icons">
+                    menu
+                </i> Новосибирск</p>
                 <!-- TODO Меню городов -->
             </div>
             <div class="header-top-center">
                 <a class="header-top-center__button button-blue" href="#">Войти</a>
                 <a class="header-top-center__button button-blue" href="#">Регистрация</a>
-                <p class="header-top-center__button">S<span class="button-numeric-notification">42</span></p>
-                <p class="header-top-center__button">B<span class="button-numeric-notification">13</span></p>
+                <p class="header-top-center__button"><i class="material-icons">
+                    star_border
+                </i><span class="button-numeric-notification">42</span></p>
+                <p class="header-top-center__button"><i class="material-icons">
+                    shopping_cart
+                </i><span class="button-numeric-notification">13</span></p>
                 <!-- TODO Иконки -->
                 <p class="header-top-center__sum text-blue">101 250 р.</p>
                 <a class="header-top-center__button button-pink" href="#">Оформить заказ</a>
@@ -30,12 +39,13 @@
                 <p><span class="text-blue">8 383</span> 201 84 21</p>
             </div>
         </div>
-    </div>
-    <div class="header-search">
-        <div class="header-search-left"><a href="#" class="logo"><img src="img/logo.png" alt="логотип"/></a></div>
-        <div class="header-search-right">
-            <input type="text" placeholder="введите название или артикул товара" class="header-search-right__input">
-            <a href="#" class="header-search-right__button-search button-blue">Найти</a>
+
+        <div class="header-search">
+            <div class="header-search-left"><a href="#" class="logo"><img src="img/logo.png" alt="логотип"/></a></div>
+            <div class="header-search-right">
+                <input type="text" placeholder="введите название или артикул товара" class="header-search-right__input">
+                <a href="#" class="header-search-right__button-search button-blue">Найти</a>
+            </div>
         </div>
     </div>
     <div class="middle">
@@ -70,41 +80,141 @@
             </div>
             <div class="middle-right-goods-slider">
                 <div class="goods-item">
-                    <a href="#"></a>
-                    <p class="goods-item__description">Бумага бархатная А4, 05 л
-                        05 цветов, 210*297 мм</p>
-                    <p class="goods-item__price">121.87 р.</p>
-                    <a href="#" class="goods-item__to-cart"></a>
+                    <div class="goods-item-discount">
+                        <p>Скидка</p>
+                        <p class="goods-item-discount__item-value">10%</p>
+                    </div>
+                    <div class="goods-item-image"><img src="img/item1.jpg" alt=""></div>
+                    <a href="#" class="goods-item__description">Бумага бархатная А4, 05 л
+                        05 цветов, 210*297 мм</a>
+                    <div class="goods-item-bottom">
+                        <p class="goods-item-bottom__old-price text-pink">135.41 р.</p>
+                        <p class="goods-item-bottom__price">121.87 р.</p>
+                        <a href="#" class="goods-item-bottom__to-cart"><i
+                                class="material-icons">add_shopping_cart</i></a>
+                    </div>
                 </div>
                 <div class="goods-item">
-                    <a href="#"></a>
-                    <p class="goods-item__description">Бумага бархатная А4, 05 л
-                        05 цветов, 210*297 мм</p>
-                    <p class="goods-item__price">121.87 р.</p>
-                    <a href="#" class="goods-item__to-cart"></a>
+                    <div class="goods-item-popular">
+                        <p class="goods-item-popular__item1">Хит</p>
+                        <p class="goods-item-popular__item2">продаж</p>
+                    </div>
+                    <div class="goods-item-image"><img src="img/item2.jpg" alt=""></div>
+                    <a href="#" class="goods-item__description">Калькулятор "Assistan" карманный 08 разрядов</a>
+                    <div class="goods-item-bottom">
+                        <p class="goods-item-bottom__old-price text-pink">227.15 р.</p>
+                        <p class="goods-item-bottom__price">193.08 р.</p>
+                        <a href="#" class="goods-item-bottom__to-cart"><i
+                                class="material-icons">add_shopping_cart</i></a>
+                    </div>
                 </div>
                 <div class="goods-item">
-                    <a href="#"></a>
-                    <p class="goods-item__description">Бумага бархатная А4, 05 л
-                        05 цветов, 210*297 мм</p>
-                    <p class="goods-item__price">121.87 р.</p>
-                    <a href="#" class="goods-item__to-cart"></a>
+                    <div class="goods-item-discount">
+                        <p>Скидка</p>
+                        <p class="goods-item-discount__item-value">10%</p>
+                    </div>
+                    <div class="goods-item-image"><img src="img/item3.jpg" alt=""></div>
+                    <a href="#" class="goods-item__description">Зажим для бумаг 15 мм
+                        цветной «Sponsor» (12)</a>
+                    <div class="goods-item-bottom">
+                        <p class="goods-item-bottom__old-price text-pink">2.43 р.</p>
+                        <p class="goods-item-bottom__price">2.19 р.</p>
+                        <a href="#" class="goods-item-bottom__to-cart"><i
+                                class="material-icons">add_shopping_cart</i></a>
+                    </div>
                 </div>
                 <div class="goods-item">
-                    <a href="#"></a>
-                    <p class="goods-item__description">Бумага бархатная А4, 05 л
-                        05 цветов, 210*297 мм</p>
-                    <p class="goods-item__price">121.87 р.</p>
-                    <a href="#" class="goods-item__to-cart"></a>
+                    <div class="goods-item-popular">
+                        <p class="goods-item-popular__item1">Хит</p>
+                        <p class="goods-item-popular__item2">продаж</p>
+                    </div>
+                    <div class="goods-item-image"><img src="img/item4.jpg" alt=""></div>
+                    <a href="#" class="goods-item__description">Подарочный нож VICTORINOX «Handyman»</a>
+                    <div class="goods-item-bottom">
+                        <p class="goods-item-bottom__old-price text-pink">6693.50 р.</p>
+                        <p class="goods-item-bottom__price">6024.15 р.</p>
+                        <a href="#" class="goods-item-bottom__to-cart"><i
+                                class="material-icons">add_shopping_cart</i></a>
+                    </div>
                 </div>
             </div>
+            <div class="clear"></div>
+            <div class="middle-blog">
+                <p class="middle-blog__head">Блог</p>
+                <div class="middle-blog-item">
+                    <div class="middle-blog-item-img">
+                        <img src="img/blog1.jpg" alt="">
+                    </div>
+                    <p class="middle-blog-item__description">
+                        Акция на бумагу Svetocopy!
+                    </p>
+                    <p class="middle-blog-item__date">17.01.2018</p>
+                </div>
+                <div class="middle-blog-item">
+                    <div class="middle-blog-item-img">
+                        <img src="img/blog2.jpg" alt="">
+                    </div>
+                    <p class="middle-blog-item__description">
+                        Повышение цен на продукцию Erich Krause
+                    </p>
+                    <p class="middle-blog-item__date">04.02.2016</p>
+                </div>
+                <div class="middle-blog-item">
+                    <div class="middle-blog-item-img">
+                        <img src="img/blog3.jpg" alt="">
+                    </div>
+                    <p class="middle-blog-item__description">
+                        Сезонное увеличение цен на бумагу
+                    </p>
+                    <p class="middle-blog-item__date">26.01.2016</p>
+                </div>
+            </div>
+            <div class="clear"></div>
+            <div class="middle-prefooter">
+                <div class="middle-prefooter-left">
+                    <p class="middle-prefooter-left__item1">Бесплатная доставка</p>
+                    <p class="middle-prefooter-left__item2">При сумме заказа более 2000 руб.</p>
+                    <a class="middle-prefooter-left__item3" href="">подробнее &#187;</a>
+                </div>
+                <div class="middle-prefooter-right">
+                    <p>Прайс-лист</p>
+                    <img src="img/price-list.jpg" alt="прайс-лист">
+                    <a href="#">Скачать<span class="text-blue"> &#62;</span></a>
+                </div>
+            </div>
+            <div class="clear"></div>
         </div>
-
+        <div class="clear"></div>
     </div>
+</div>
 
-    <div class="footer">
-
-
+<div class="footer">
+    <div class="container">
+        <div class="footer-left">
+            <ul>
+                <li>Компания</li>
+                <li><a href="#">о нас</a></li>
+                <li><a href="#">блог</a></li>
+                <li><a href="#">контакты</a></li>
+            </ul>
+            <ul>
+                <li>Условия</li>
+                <li><a href="#">Заказ</a></li>
+                <li><a href="#">Оплата</a></li>
+                <li><a href="#">Доставка</a></li>
+            </ul>
+            <ul>
+                <li>Выгоды</li>
+                <li><a href="#">Скидки</a></li>
+                <li><a href="#">Акции</a></li>
+                <li><a href="#">Распродажа</a></li>
+            </ul>
+        </div>
+        <div class="footer-right">
+            <p><span class="text-blue">8 383</span> 201 84 21</p>
+            <a href="#" class="button-blue">заказать звонок</a>
+            <a href="#" class="logo"><img src="img/logo.png" alt="логотип"/></a>
+        </div>
     </div>
 </div>
 </body>
