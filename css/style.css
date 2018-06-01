@@ -236,12 +236,13 @@ body {
 }
 .goods-item{
     position: relative;
+    top: 10px;
     display: inline-block;
     float: left;
     margin-left: 15px;
     background-color: #ffffff;
     width: 215px;
-    height: 289px;
+    height: 298px;
 }
 
 .goods-item-discount{
@@ -516,7 +517,9 @@ body {
     top:90px;
     opacity: 0.8;
 }
-
+.owl-carousel .owl-item img {
+    width: auto;
+}
 
 .clear{
     clear: both;
