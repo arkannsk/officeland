@@ -117,7 +117,7 @@ body {
     top: -30px;
     left:-50px;
 }
-.header-top-center__button>i{
+.header-top-center__button> a > i{
     color:#294272;
     font-size: 2.6em;
     margin-left: 10px;
@@ -227,7 +227,7 @@ body {
 
 .middle-right-slider{
     margin-top: 20px;
-    min-height: 288px;
+    min-height: 310px;
 }
 
 .middle-right-goods-slider{
@@ -497,6 +497,26 @@ body {
     color: #fff;
 
 }
+.owl-stage-outer{
+    overflow: visible;
+}
+.owl-carousel{
+    overflow: visible;
+}
+
+.owl-prev{
+    position: absolute;
+    left:15px;
+    top:90px;
+    opacity: 0.8;
+}
+.owl-next{
+    position: absolute;
+    right:15px;
+    top:90px;
+    opacity: 0.8;
+}
+
 
 .clear{
     clear: both;

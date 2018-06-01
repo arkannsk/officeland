@@ -8,6 +8,8 @@
     <link href="http://allfont.ru/allfont.css?fonts=montserrat" rel="stylesheet" type="text/css"/>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
           rel="stylesheet">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Office Land</title>
 </head>
@@ -25,12 +27,12 @@
             <div class="header-top-center">
                 <a class="header-top-center__button button-blue" href="#">Войти</a>
                 <a class="header-top-center__button button-blue" href="#">Регистрация</a>
-                <p class="header-top-center__button"><i class="material-icons">
-                    star_border
-                </i><span class="button-numeric-notification">42</span></p>
-                <p class="header-top-center__button"><i class="material-icons">
-                    shopping_cart
-                </i><span class="button-numeric-notification">13</span></p>
+                <p class="header-top-center__button">
+                    <a href="#"><i class="material-icons">star_border</i></a>
+                    <span class="button-numeric-notification">42</span></p>
+                <p class="header-top-center__button">
+                    <a href="#"><i class="material-icons">shopping_cart</i></a>
+                    <span class="button-numeric-notification">13</span></p>
                 <!-- TODO Иконки -->
                 <p class="header-top-center__sum text-blue">101 250 р.</p>
                 <a class="header-top-center__button button-pink" href="#">Оформить заказ</a>
@@ -76,9 +78,11 @@
             </ul>
 
             <div class="middle-right-slider">
+                <div>
                 <img src="img/slider.jpg" alt="слайдер акций">
+                </div>
             </div>
-            <div class="middle-right-goods-slider">
+            <div class="owl-carousel middle-right-goods-slider" >
                 <div class="goods-item">
                     <div class="goods-item-discount">
                         <p>Скидка</p>
@@ -129,7 +133,65 @@
                         <p class="goods-item-popular__item2">продаж</p>
                     </div>
                     <div class="goods-item-image"><img src="img/item4.jpg" alt=""></div>
-                    <a href="#" class="goods-item__description">Подарочный нож VICTORINOX «Handyman»</a>
+                    <a href="#" class="goods-item__description">Подарочontainer_idный нож VICTORINOX «Handyman»</a>
+                    <div class="goods-item-bottom">
+                        <p class="goods-item-bottom__old-price text-pink">6693.50 р.</p>
+                        <p class="goods-item-bottom__price">6024.15 р.</p>
+                        <a href="#" class="goods-item-bottom__to-cart"><i
+                                class="material-icons">add_shopping_cart</i></a>
+                    </div>
+                </div>
+                <div class="goods-item">
+                    <div class="goods-item-discount">
+                        <p>Скидка</p>
+                        <p class="goods-item-discount__item-value">10%</p>
+                    </div>
+                    <div class="goods-item-image"><img src="img/item1.jpg" alt=""></div>
+                    <a href="#" class="goods-item__description">Бумага бархатная А4, 05 л
+                        05 цветов, 210*297 мм</a>
+                    <div class="goods-item-bottom">
+                        <p class="goods-item-bottom__old-price text-pink">135.41 р.</p>
+                        <p class="goods-item-bottom__price">121.87 р.</p>
+                        <a href="#" class="goods-item-bottom__to-cart"><i
+                                class="material-icons">add_shopping_cart</i></a>
+                    </div>
+                </div>
+                <div class="goods-item">
+                    <div class="goods-item-popular">
+                        <p class="goods-item-popular__item1">Хит</p>
+                        <p class="goods-item-popular__item2">продаж</p>
+                    </div>
+                    <div class="goods-item-image"><img src="img/item2.jpg" alt=""></div>
+                    <a href="#" class="goods-item__description">Калькулятор "Assistan" карманный 08 разрядов</a>
+                    <div class="goods-item-bottom">
+                        <p class="goods-item-bottom__old-price text-pink">227.15 р.</p>
+                        <p class="goods-item-bottom__price">193.08 р.</p>
+                        <a href="#" class="goods-item-bottom__to-cart"><i
+                                class="material-icons">add_shopping_cart</i></a>
+                    </div>
+                </div>
+                <div class="goods-item">
+                    <div class="goods-item-discount">
+                        <p>Скидка</p>
+                        <p class="goods-item-discount__item-value">10%</p>
+                    </div>
+                    <div class="goods-item-image"><img src="img/item3.jpg" alt=""></div>
+                    <a href="#" class="goods-item__description">Зажим для бумаг 15 мм
+                        цветной «Sponsor» (12)</a>
+                    <div class="goods-item-bottom">
+                        <p class="goods-item-bottom__old-price text-pink">2.43 р.</p>
+                        <p class="goods-item-bottom__price">2.19 р.</p>
+                        <a href="#" class="goods-item-bottom__to-cart"><i
+                                class="material-icons">add_shopping_cart</i></a>
+                    </div>
+                </div>
+                <div class="goods-item">
+                    <div class="goods-item-popular">
+                        <p class="goods-item-popular__item1">Хит</p>
+                        <p class="goods-item-popular__item2">продаж</p>
+                    </div>
+                    <div class="goods-item-image"><img src="img/item4.jpg" alt=""></div>
+                    <a href="#" class="goods-item__description">Подарочontainer_idный нож VICTORINOX «Handyman»</a>
                     <div class="goods-item-bottom">
                         <p class="goods-item-bottom__old-price text-pink">6693.50 р.</p>
                         <p class="goods-item-bottom__price">6024.15 р.</p>
@@ -217,5 +279,20 @@
         </div>
     </div>
 </div>
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $(".owl-carousel").owlCarousel({
+             margin : 10,
+            autoWidth: true,
+            autoHeight: true,
+            loop: true,
+            // Navigation
+            nav : true,
+            navText : ["<img src=\"img/arrow_left.png\">","<img src=\"img/arrow_right.png\">"],
+        });
+    });
+</script>
 </body>
 </html>
