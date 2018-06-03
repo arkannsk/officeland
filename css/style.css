@@ -93,7 +93,7 @@ body {
     font-size: 0.9em;
     text-align: center;
     margin-left: 1px;
-    padding: 20px 9px;
+    padding: 17px 9px;
     display: block;
     text-decoration: none;
     text-transform: uppercase;
@@ -101,7 +101,7 @@ body {
 }
 
 .grow-down-button:hover{
-    padding: 38px 9px 10px 9px;
+    padding: 38px 9px 17px 9px;
     -webkit-transition: 0.3s all;
     -moz-transition: 0.3s all;
     -o-transition: 0.3s all;
@@ -133,7 +133,7 @@ body {
     text-align: center;
     width: 100px;
     margin-left: 15px;
-    padding: 13px 7px;
+    padding: 11px 7px;
     display: block;
     text-decoration: none;
     text-transform: uppercase;
