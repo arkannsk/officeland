@@ -141,11 +141,10 @@ body {
 }
 
 .header-top-right{
-    float: left;
+    float: right;
     font-size: 1.5em;
     font-weight: bold;
     padding-top: 18px;
-    margin-right: 20px;
 }
 
  .button-numeric-notification{
@@ -268,7 +267,8 @@ body {
 
 .middle-right-slider{
     margin-top: 20px;
-    min-height: 310px;
+    height: 310px;
+    width: 955px;
 }
 
 .middle-right-goods-slider{
@@ -343,7 +343,7 @@ body {
     margin: 0 auto;
     display: block;
     width: 175px;
-    height: 33px;
+    height: 30px;
     overflow: hidden;
     text-decoration: none;
 }
@@ -405,13 +405,15 @@ body {
     margin-right: 20px;
     float: left;
     height: 343px;
-    width: 295px;
+    width: 298px;
     background-color: #FBFBFB;
 }
 .middle-blog-item__description{
+    text-align: left;
     font-size: 1.3em;
-    margin-top: 10px;
-    width: 90%;
+    margin-top: 15px;
+    margin-left: 15px;
+    width: 80%;
 
 }
 .middle-blog-item__date{
@@ -536,30 +538,6 @@ body {
     text-transform: uppercase;
     text-decoration: none;
     color: #fff;
-
-}
-.owl-stage-outer{
-    overflow: visible;
-}
-.owl-carousel{
-    overflow: visible;
-}
-
-.owl-prev{
-    position: absolute;
-    left:10px;
-    top:110px;
-    opacity: 0.8;
-}
-.owl-next{
-    position: absolute;
-    right:30px;
-    top:110px;
-    opacity: 0.8;
-}
-.owl-carousel .owl-item img {
-    width: auto;
-    display: inline;
 }
 
 .clear{

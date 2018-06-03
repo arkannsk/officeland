@@ -8,8 +8,8 @@
     <link href="http://allfont.ru/allfont.css?fonts=montserrat" rel="stylesheet" type="text/css"/>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
           rel="stylesheet">
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/goods-slider.css">
+    <link rel="stylesheet" href="css/banner-slider.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Office Land</title>
 </head>
@@ -74,12 +74,12 @@
                 <li><a href="#">Акции</a></li>
             </ul>
 
-            <div class="middle-right-slider">
-                <div>
-                    <img src="img/slider.jpg" alt="слайдер акций">
-                </div>
+            <div class="middle-right-slider banner-slider">
+                <div><img src="img/slider.jpg" alt="слайдер акций"></div>
+                <div><img src="img/slider.jpg" alt="слайдер акций"></div>
+                <div><img src="img/slider.jpg" alt="слайдер акций"></div>
             </div>
-            <div class="owl-carousel middle-right-goods-slider">
+            <div class="middle-right-goods-slider goods-slider">
                 <div class="goods-item">
                     <div class="goods-item-discount">
                         <p>Скидка</p>
@@ -279,11 +279,19 @@
 <script src="js/jquery-3.3.1.min.js"></script>
 <script src="js/owl.carousel.min.js"></script>
 <script>
-    $(document).ready(function () {
-        $(".owl-carousel").owlCarousel({
+    $(function() {
+        $(".middle-right-goods-slider").owlCarousel({
             margin: 10,
             autoWidth: true,
             autoHeight: true,
+            loop: true,
+            // Navigation
+            nav: true,
+            navText: ["<img src=\"img/arrow_left.png\">", "<img src=\"img/arrow_right.png\">"]
+        });
+        $(".middle-right-slider").owlCarousel({
+            items: 1,
+            dots:true,
             loop: true,
             // Navigation
             nav: true,
