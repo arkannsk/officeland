@@ -314,13 +314,19 @@ body {
     text-transform: uppercase;
     color:#fff;
 }
+.catalog{
+    position: relative;
+}
 
 
 .catalog>li{
     line-height: 1.15em;
 }
+.catalog a:hover{
+    color: #fff;
+}
 
-.catalog>li>a{
+.catalog a{
     font-size: 0.9em;
     color: #000;
     display: block;
@@ -328,7 +334,7 @@ body {
     padding: 10px 5px;
     text-transform: uppercase;
 }
-.catalog>li>a:hover{
+.catalog li:hover{
     background-color: #E6006F;
     color: #FFF;
 }
@@ -639,6 +645,36 @@ body {
     text-transform: uppercase;
     text-decoration: none;
     color: #fff;
+}
+.catalog-selected{
+    background-color: #E6006F;
+    color: #FFF;
+}
+.catalog .catalog-selected > a{
+    color: #FFF;
+}
+.sub-catalog li{
+    box-sizing: border-box;
+}
+
+
+.sub-catalog{
+    position: absolute;
+    top: 0;
+    left: 320px;
+    width: 320px;
+    margin-left: 1px;
+    background-color: #fff;
+    z-index: 2;
+    opacity: 0.95;
+    min-height: 400px;
+}
+.catalog-border-left{
+    border-left: 4px solid #E6006F;
+}
+
+.first-sub-level{
+    left:235px;
 }
 
 .clear{
