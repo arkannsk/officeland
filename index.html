@@ -14,7 +14,33 @@
     <title>Office Land</title>
 </head>
 <body>
-<div class="container">
+<div id="login-modal" class="my_modal mfp-hide white-popup-block">
+    <button title="Close (Esc)" type="button" class="mfp-close">×</button>
+    <div class="h2">Вход</div>
+
+    <div class="login_page">
+        <form name="form_auth" method="get" action="">
+            <input type="hidden" name="AUTH_FORM" value="Y" />
+            <input type="hidden" name="TYPE" value="AUTH" />
+            <input type="hidden" name="backurl" value="/" />
+            <div class="one_input">
+                <div class="label">E-mail</div>
+                <input type="text" value="" name="USER_LOGIN" class="input">
+            </div>
+            <div class="one_input">
+                <div class="label">Пароль</div>
+                <input type="password" name="USER_PASSWORD" class="input">
+            </div>
+            <div class="under_inputs">
+                <input type="checkbox" class="checkbox" name="USER_REMEMBER" value="Y" id="c1"/>
+                <label for="c1"><span></span>Запомнить меня</label>
+                <a href="/auth/?forgot_password=yes" class="forgot">Забыли пароль?</a>
+            </div>
+            <button type="submit" name="Login" value="Y" class="btn">Войти</button>
+        </form>
+    </div>
+</div>
+    <div class="container">
     <div class="header">
         <div class="header-top">
             <div class="header-top-left">

@@ -694,3 +694,6 @@ body {
 .button-pink{
     background-color: #E6006F;
 }
+#login-modal{
+    display: none;
+}
