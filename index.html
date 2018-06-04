@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/goods-slider.css">
     <link rel="stylesheet" href="css/banner-slider.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
     <title>Office Land</title>
 </head>
 <body>
@@ -20,9 +21,9 @@
 
     <div class="login_page">
         <form name="form_auth" method="get" action="">
-            <input type="hidden" name="AUTH_FORM" value="Y" />
-            <input type="hidden" name="TYPE" value="AUTH" />
-            <input type="hidden" name="backurl" value="/" />
+            <input type="hidden" name="AUTH_FORM" value="Y"/>
+            <input type="hidden" name="TYPE" value="AUTH"/>
+            <input type="hidden" name="backurl" value="/"/>
             <div class="one_input">
                 <div class="label">E-mail</div>
                 <input type="text" value="" name="USER_LOGIN" class="input">
@@ -34,13 +35,13 @@
             <div class="under_inputs">
                 <input type="checkbox" class="checkbox" name="USER_REMEMBER" value="Y" id="c1"/>
                 <label for="c1"><span></span>Запомнить меня</label>
-                <a href="/auth/?forgot_password=yes" class="forgot">Забыли пароль?</a>
+                <a href="#" class="forgot">Забыли пароль?</a>
             </div>
             <button type="submit" name="Login" value="Y" class="btn">Войти</button>
         </form>
     </div>
 </div>
-    <div class="container">
+<div class="container">
     <div class="header">
         <div class="header-top">
             <div class="header-top-left">
@@ -233,7 +234,7 @@
                 <div><a href="#"><img src="img/slider.jpg" alt="слайдер акций"></a></div>
                 <div><a href="#"><img src="img/slider.jpg" alt="слайдер акций"></a></div>
             </div>
-            <div class="middle-right-goods-slider goods-slider">
+            <div class="middle-right-goods-slider goods-slider .owl-carousel .owl-theme">
                 <div class="goods-item">
                     <div class="goods-item-discount">
                         <p>Скидка</p>
@@ -434,10 +435,38 @@
 <script>
     $(function () {
         $(".middle-right-goods-slider").owlCarousel({
-            margin: 10,
-            autoWidth: true,
-            autoHeight: true,
-            loop: true,
+
+            responsiveClass: true,
+            responsive: {
+                0: {
+                    margin:10,
+                    items: 1,
+                    autoWidth: true,
+                    loop: true,
+                    center: true
+                },
+               450: {
+                    items: 2,
+                    autoWidth: true,
+                   loop: true
+                },
+                700: {
+                    items: 3,
+                    autoWidth: true,
+                    loop: true
+                },
+                900: {
+                    items: 4,
+                    autoWidth: true,
+                    loop: true
+                },
+                1197:{
+                    margin: 10,
+                    autoWidth: true,
+                    autoHeight: true,
+                    loop: true
+                }
+            },
             autoplay: true,
             autoplayTimeout: 2500,
             // Navigation
@@ -466,23 +495,23 @@
             });
 
         });
-        let prevElemIndex = 0;
+        var prevElemIndex = 0;
 
         function markBorderInCatalog(elem) {
             if (elem.parent().hasClass('catalog')) {
                 prevElemIndex = elem.index();
                 return false;
             }
-            let currentElemIndex = elem.index();
+            var currentElemIndex = elem.index();
             if (prevElemIndex < currentElemIndex) {
-                for (let i = prevElemIndex; i < currentElemIndex; i++) {
+                for (var i = prevElemIndex; i < currentElemIndex; i++) {
                     elem.siblings('li').eq(i).addClass('catalog-border-left');
                 }
 
             }
             if (prevElemIndex > currentElemIndex) {
-                for (let i = prevElemIndex; i >= currentElemIndex; i--) {
-                    elem.siblings('li').eq(i).addClass('catalog-border-left');
+                for (var j = prevElemIndex; j >= currentElemIndex; j--) {
+                    elem.siblings('li').eq(j).addClass('catalog-border-left');
                 }
             }
             prevElemIndex = currentElemIndex;
