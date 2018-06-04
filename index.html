@@ -27,10 +27,70 @@
             <div class="header-top-center">
                 <a class="header-top-center__button button-blue grow-down-button" href="#">Войти</a>
                 <a class="header-top-center__button button-blue grow-down-button" href="#">Регистрация</a>
-                <a class="header-top-center__favorite-button icon-button" href="#"><i class="material-icons">star_border</i>
+                <a class="header-top-center__favorite-button icon-button" href="#"><i
+                        class="material-icons">star_border</i>
                     <span class="button-numeric-notification">42</span></a>
-                <a class="header-top-center__cart-button icon-button" href="#"><i class="material-icons">shopping_cart</i>
+                <div class="cart-block"><a class="cart-block__cart-button icon-button" href="#">
+                    <i class="material-icons">shopping_cart</i>
                     <span class="button-numeric-notification">13</span></a>
+                    <div class="cart-panel">
+                        <div class="cart-panel-header">
+                            <p class="cart-panel-header__head-text">Ваша корзина</p>
+                            <p class="cart-panel-header__goods-count text-blue">Товаров: <span>34</span></p>
+                        </div>
+                        <div class="cart-panel-middle">
+                            <table>
+                                <tr>
+                                    <td class="text-blue">1.</td>
+                                    <td class="cart-panel-middle__description"><a href="#">Самоклеюшийся блок, 400 листов</a></td>
+                                    <td class="cart-panel-middle__sum text-blue">155,21 р. * 2 шт. = <span class="text-pink">310,42</span></td>
+                                    <td><a href="#" class="cart-panel-middle__delete-from-table text-pink">X</a></td>
+                                </tr>
+                                <tr>
+                                    <td class="text-blue">2.</td>
+                                    <td class="cart-panel-middle__description"><a href="#">Кофемашина DELONG asd</a></td>
+                                    <td class="cart-panel-middle__sum text-blue">136.463,68 р. * 2 шт. = <span class="text-pink">272927,36</span></td>
+                                    <td><a href="#" class="cart-panel-middle__delete-from-table text-pink">X</a></td>
+                                </tr>
+                                <tr>
+                                    <td class="text-blue">3.</td>
+                                    <td class="cart-panel-middle__description"><a href="#">Магнит для доски(8 шт.) D=20 mm</a></td>
+                                    <td class="cart-panel-middle__sum text-blue">41,35 р. * 1 шт. = <span class="text-pink">41,35 р.</span></td>
+                                    <td><a href="#" class="cart-panel-middle__delete-from-table text-pink">X</a></td>
+                                </tr>
+                                <tr>
+                                    <td class="text-blue">4.</td>
+                                    <td class="cart-panel-middle__description"><a href="#">Кофе в зернах LAVAZZA "Espresso"</a></td>
+                                    <td class="cart-panel-middle__sum text-blue">436,31 р. * 2 шт. = <span class="text-pink">436,31 р.</span></td>
+                                    <td><a href="#" class="cart-panel-middle__delete-from-table text-pink">X</a></td>
+                                </tr>
+                                <tr>
+                                    <td class="text-blue">5.</td>
+                                    <td class="cart-panel-middle__description"><a href="#">Бизнес-блокнот BRAUBERG A6, 100*60</a></td>
+                                    <td class="cart-panel-middle__sum text-blue">257,02 р. * 2 шт. = <span class="text-pink">514,02</span></td>
+                                    <td><a href="#" class="cart-panel-middle__delete-from-table text-pink">X</a></td>
+                                </tr>
+                                <tr>
+                                    <td class="text-blue">6.</td>
+                                    <td class="cart-panel-middle__description"><a href="#">Самоклеюшийся блок, 400 листов</a></td>
+                                    <td class="cart-panel-middle__sum text-blue">155,21 * 2 шт. = <span class="text-pink">310,42</span></td>
+                                    <td><a href="#" class="cart-panel-middle__delete-from-table text-pink">X</a></td>
+                                </tr>
+                                <tr>
+                                    <td class="text-blue">7.</td>
+                                    <td class="cart-panel-middle__description"><a href="#">Самоклеюшийся блок, 400 листов</a></td>
+                                    <td class="cart-panel-middle__sum text-blue">155,21 * 2 шт. = <span class="text-pink">310,42</span></td>
+                                    <td><a href="#" class="cart-panel-middle__delete-from-table text-pink">X</a></td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="cart-panel-bottom">
+                            <p class="text-pink">Сумма:</p>
+                            <p class="cart-panel-bottom__sum text-pink">224 279.48 р.</p>
+                            <a class="button-blue" href="#">Перейти в корзину</a>
+                        </div>
+                    </div>
+                </div>
                 <p class="header-top-center__sum text-blue">101 250 р.</p>
                 <a class="header-top-center__complete-order-button button-pink" href="#">Оформить заказ</a>
             </div>
@@ -75,9 +135,9 @@
             </ul>
 
             <div class="middle-right-slider banner-slider">
-                <div><img src="img/slider.jpg" alt="слайдер акций"></div>
-                <div><img src="img/slider.jpg" alt="слайдер акций"></div>
-                <div><img src="img/slider.jpg" alt="слайдер акций"></div>
+                <div><a href="#"><img src="img/slider.jpg" alt="слайдер акций"></a></div>
+                <div><a href="#"><img src="img/slider.jpg" alt="слайдер акций"></a></div>
+                <div><a href="#"><img src="img/slider.jpg" alt="слайдер акций"></a></div>
             </div>
             <div class="middle-right-goods-slider goods-slider">
                 <div class="goods-item">
@@ -246,7 +306,6 @@
         <div class="clear"></div>
     </div>
 </div>
-
 <div class="footer">
     <div class="container">
         <div class="footer-left">
@@ -279,19 +338,21 @@
 <script src="js/jquery-3.3.1.min.js"></script>
 <script src="js/owl.carousel.min.js"></script>
 <script>
-    $(function() {
+    $(function () {
         $(".middle-right-goods-slider").owlCarousel({
             margin: 10,
             autoWidth: true,
             autoHeight: true,
             loop: true,
+            autoplay: true,
+            autoplayTimeout : 2500,
             // Navigation
             nav: true,
             navText: ["<img src=\"img/arrow_left.png\">", "<img src=\"img/arrow_right.png\">"]
         });
         $(".middle-right-slider").owlCarousel({
             items: 1,
-            dots:true,
+            dots: true,
             loop: true,
             // Navigation
             nav: true,
