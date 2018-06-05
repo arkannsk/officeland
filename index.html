@@ -5,55 +5,136 @@
     <meta name="viewport"
           content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="http://allfont.ru/allfont.css?fonts=montserrat" rel="stylesheet" type="text/css"/>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
           rel="stylesheet">
     <link rel="stylesheet" href="css/goods-slider.css">
     <link rel="stylesheet" href="css/banner-slider.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/media.css">
+    <!--<link rel="stylesheet" href="css/media.css">-->
     <title>Office Land</title>
 </head>
 <body>
-<div id="login-modal" class="my_modal mfp-hide white-popup-block">
-    <button title="Close (Esc)" type="button" class="mfp-close">×</button>
-    <div class="h2">Вход</div>
+<div id="reg-form" class="white-popup mfp-hide">
+    <form action="/" method="post">
+        <p class="modal-form-title">Регистрация</p>
+        <div class="modal-form-text-input">
+            <p>E-mail</p>
+            <input title="электронная почта" name="email" type="text">
+        </div>
+        <div class="modal-form-text-input">
+            <p>Пароль</p>
+            <input title="пароль" name="password" required type="password">
+        </div>
+        <div class="modal-form-text-input">
+            <p>Повторить пароль</p>
+            <input title="повторить пароль" name="re-password" required type="password">
+        </div>
+        <div class="modal-form-checkbox">
+            <label>
+                <input class="checkbox" type="checkbox" name="agree_personal">
+                <span class="checkbox-custom"></span>
+                <span class="label">Даю согласие на обработку персональных данных</span>
+            </label>
+        </div>
+        <div class="modal-form-checkbox">
+            <label>
+                <input class="checkbox" type="checkbox" name="agree_news">
+                <span class="checkbox-custom"></span>
+                <span class="label">Я не против рассылки мне новостей и акций</span>
+            </label>
+        </div>
+        <p class="form-submit">
+            <input type="submit" value="Зарегистрироваться">
+        </p>
 
-    <div class="login_page">
-        <form name="form_auth" method="get" action="">
-            <input type="hidden" name="AUTH_FORM" value="Y"/>
-            <input type="hidden" name="TYPE" value="AUTH"/>
-            <input type="hidden" name="backurl" value="/"/>
-            <div class="one_input">
-                <div class="label">E-mail</div>
-                <input type="text" value="" name="USER_LOGIN" class="input">
+        <button title="Close (Esc)" type="button" class="mfp-close">×</button>
+    </form>
+</div>
+<div id="auth-form" class="white-popup mfp-hide">
+    <form action="/" method="post">
+        <p class="modal-form-title">Вход</p>
+        <div class="modal-form-text-input">
+            <p>E-mail</p>
+            <input title="электронная почта" name="email" type="text">
+        </div>
+        <div class="modal-form-text-input">
+            <p>Пароль</p>
+            <input title="пароль" name="password" required type="password">
+        </div>
+        <div class="modal-form-left">
+            <div class="modal-form-checkbox">
+                <label>
+                    <input class="checkbox" type="checkbox" name="remember_me">
+                    <span class="checkbox-custom"></span>
+                    <span class="label">Запомнить меня </span>
+                </label>
             </div>
-            <div class="one_input">
-                <div class="label">Пароль</div>
-                <input type="password" name="USER_PASSWORD" class="input">
-            </div>
-            <div class="under_inputs">
-                <input type="checkbox" class="checkbox" name="USER_REMEMBER" value="Y" id="c1"/>
-                <label for="c1"><span></span>Запомнить меня</label>
-                <a href="#" class="forgot">Забыли пароль?</a>
-            </div>
-            <button type="submit" name="Login" value="Y" class="btn">Войти</button>
-        </form>
-    </div>
+            <p class="form-submit">
+                <input type="submit" value="войти">
+            </p>
+        </div>
+        <div class="modal-form-right">
+            <a class="popup-modal" href="#forgot-form">Забыли пароль?</a>
+            <a class="popup-modal" href="#reg-form">Зарегистрироваться</a>
+        </div>
+        <button title="Close (Esc)" type="button" class="mfp-close">×</button>
+        <div class="clear"></div>
+    </form>
+</div>
+<div id="forgot-form" class="white-popup mfp-hide">
+    <form action="/" method="post">
+        <p class="modal-form-title">Восстановление пароля</p>
+        <p class="modal-form-simple-text">В форму ниже введите свой электорнный адрес, указанный при регистрациию.
+            Через несколько минут на ваш e-mail придёт письмо с дальнейшими инструкциями.</p>
+        <div class="modal-form-text-input">
+            <p>E-mail:</p>
+            <input title="электронная почта" name="email" type="text">
+        </div>
+        <p class="form-submit">
+            <input type="submit" value="Продолжить">
+        </p>
+        <p class="modal-form-simple-text">Если при восстановлении пароля у вас возникли сложности, свяжитесь с нами по
+            телефону 8 (383) 201-84-21</p>
+        <button title="Close (Esc)" type="button" class="mfp-close">×</button>
+    </form>
+</div>
+<div id="callback-form" class="white-popup mfp-hide">
+    <form action="/" method="post">
+        <p class="modal-form-title">Обратная связь</p>
+        <div class="modal-form-text-input">
+            <p>Ваше имя</p>
+            <input title="имя отправителя" name="sender_name" type="text">
+        </div>
+        <div class="modal-form-text-input">
+            <p>Телефон или e-mail</p>
+            <input title="электронная почта или телефон" name="email_phone" required type="text">
+        </div>
+        <div class="modal-form-text-input">
+            <p>Сообщение</p>
+            <textarea class="modal-form-textarea" title="сообщение" cols="56" rows="7" name="message"></textarea>
+        </div>
+        <!-- --------------------- CAPTCHA -------------------- -->
+        <p class="form-submit">
+            <input type="submit" value="Отправить">
+        </p>
+
+        <button title="Close (Esc)" type="button" class="mfp-close">×</button>
+    </form>
 </div>
 <div class="container">
     <div class="header">
         <div class="header-top">
             <div class="header-top-left">
-
                 <p class="header-top-left__city"><i class="material-icons">
                     menu
                 </i> Новосибирск</p>
-                <!-- TODO Меню городов -->
             </div>
             <div class="header-top-center">
-                <a class="header-top-center__button button-blue grow-down-button" href="#">Войти</a>
-                <a class="header-top-center__button button-blue grow-down-button" href="#">Регистрация</a>
+                <a class="header-top-center__button button-blue grow-down-button popup-modal"
+                   href="#auth-form">Войти</a>
+                <a class="header-top-center__button button-blue grow-down-button popup-modal" href="#reg-form">Регистрация</a>
                 <a class="header-top-center__favorite-button icon-button" href="#"><i
                         class="material-icons">star_border</i>
                     <span class="button-numeric-notification">42</span></a>
@@ -136,7 +217,7 @@
                 <a class="header-top-center__complete-order-button button-pink" href="#">Оформить заказ</a>
             </div>
             <div class="header-top-right">
-                <p><span class="text-blue">8 383</span> 201 84 21</p>
+                <p class="phone"><span class="text-blue">8 383</span> 201 84 21</p>
             </div>
         </div>
         <div class="clear"></div>
@@ -147,6 +228,9 @@
                 <a href="#" class="header-search-right__button-search button-blue">Найти</a>
             </div>
         </div>
+    <div style="display: none" class="mobile-menu">
+
+    </div>
     </div>
     <div class="middle">
 
@@ -424,100 +508,16 @@
             </ul>
         </div>
         <div class="footer-right">
-            <p><span class="text-blue">8 383</span> 201 84 21</p>
-            <a href="#" class="button-blue">заказать звонок</a>
+            <p class="phone"><span class="text-blue">8 383</span> 201 84 21</p>
+            <a href="#callback-form" class="button-blue popup-modal">заказать звонок</a>
             <a href="#" class="logo"><img src="img/logo.png" alt="логотип"/></a>
         </div>
     </div>
 </div>
 <script src="js/jquery-3.3.1.min.js"></script>
 <script src="js/owl.carousel.min.js"></script>
-<script>
-    $(function () {
-        $(".middle-right-goods-slider").owlCarousel({
-
-            responsiveClass: true,
-            responsive: {
-                0: {
-                    margin:10,
-                    items: 1,
-                    autoWidth: true,
-                    loop: true,
-                    center: true
-                },
-               450: {
-                    items: 2,
-                    autoWidth: true,
-                   loop: true
-                },
-                700: {
-                    items: 3,
-                    autoWidth: true,
-                    loop: true
-                },
-                900: {
-                    items: 4,
-                    autoWidth: true,
-                    loop: true
-                },
-                1197:{
-                    margin: 10,
-                    autoWidth: true,
-                    autoHeight: true,
-                    loop: true
-                }
-            },
-            autoplay: true,
-            autoplayTimeout: 2500,
-            // Navigation
-            nav: true,
-            navText: ["<img src=\"img/arrow_left.png\">", "<img src=\"img/arrow_right.png\">"]
-        });
-        $(".middle-right-slider").owlCarousel({
-            items: 1,
-            dots: true,
-            loop: true,
-            // Navigation
-            nav: true,
-            navText: ["<img src=\"img/arrow_left.png\">", "<img src=\"img/arrow_right.png\">"]
-        });
-        $('.catalog ul').hide();
-        $('.catalog li.current').parent().show();
-        $('.catalog li').bind('mouseover', function () {
-            $(this).addClass('catalog-selected');
-            markBorderInCatalog($(this));
-            $(this).children('ul').show();
-            $(this).mouseleave(function () {
-                if ($(this).has('ul')) $('.catalog li').removeClass('catalog-selected');
-                $('.catalog li').removeClass('catalog-border-left');
-                $('.catalog ul').hide();
-                return false;
-            });
-
-        });
-        var prevElemIndex = 0;
-
-        function markBorderInCatalog(elem) {
-            if (elem.parent().hasClass('catalog')) {
-                prevElemIndex = elem.index();
-                return false;
-            }
-            var currentElemIndex = elem.index();
-            if (prevElemIndex < currentElemIndex) {
-                for (var i = prevElemIndex; i < currentElemIndex; i++) {
-                    elem.siblings('li').eq(i).addClass('catalog-border-left');
-                }
-
-            }
-            if (prevElemIndex > currentElemIndex) {
-                for (var j = prevElemIndex; j >= currentElemIndex; j--) {
-                    elem.siblings('li').eq(j).addClass('catalog-border-left');
-                }
-            }
-            prevElemIndex = currentElemIndex;
-        }
-
-    });
-</script>
+<script src="js/jquery.magnific-popup.min.js"></script>
+<script src="js/carousel.js"></script>
+<script src="js/modal-popup.js"></script>
 </body>
 </html>
