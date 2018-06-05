@@ -131,7 +131,23 @@
                     menu
                 </i> Новосибирск</p>
             </div>
+            <div class="header-top-right">
+                <p class="phone"><span class="text-blue">8 383</span> 201 84 21</p>
+            </div>
             <div class="header-top-center">
+                <!-- IF USER AUTH = 1 -->
+                <div class="lk-block">
+                    <a href="#" class="header-top-center__button-lk button-blue">name@domain.ru</a>
+                    <ul class="lk-submenu">
+                        <li><a href="#">Личные данные</a></li>
+                        <li><a href="#">Мои компании</a></li>
+                        <li><a href="#">Мои заказы</a></li>
+                        <li><a href="#">Избранное</a></li>
+                        <li><a href="#">Корзина</a></li>
+                        <li><a href="#">Выход</a></li>
+                    </ul>
+                </div>
+                <!-- IF USER AUTH = 1 -->
                 <a class="header-top-center__button button-blue grow-down-button popup-modal"
                    href="#auth-form">Войти</a>
                 <a class="header-top-center__button button-blue grow-down-button popup-modal" href="#reg-form">Регистрация</a>
@@ -216,9 +232,6 @@
                 <p class="header-top-center__sum text-blue">101 250 р.</p>
                 <a class="header-top-center__complete-order-button button-pink" href="#">Оформить заказ</a>
             </div>
-            <div class="header-top-right">
-                <p class="phone"><span class="text-blue">8 383</span> 201 84 21</p>
-            </div>
         </div>
         <div class="clear"></div>
         <div class="header-search">
@@ -228,43 +241,16 @@
                 <a href="#" class="header-search-right__button-search button-blue">Найти</a>
             </div>
         </div>
-    <div style="display: none" class="mobile-menu">
+        <div style="display: none" class="mobile-menu">
 
-    </div>
+        </div>
     </div>
     <div class="middle">
 
         <div class="middle-left">
             <p class="middle-left__head">Каталог</p>
             <ul class="catalog">
-                <li><a href="#">Бумага и бумажная продукция</a>
-                    <ul class="sub-catalog first-sub-level">
-                        <li><a href="#">Блоки для записей, закладки</a></li>
-                        <li><a href="#">Блокноты и записные книжки</a></li>
-                        <li><a href="#">Бумага для оргтехники</a></li>
-                        <li><a href="#">Бухгалтерские книги, бланки, формы</a></li>
-                        <li><a href="#">Грамоты, дипломы, сертификаты, дизайн-бумага</a></li>
-                        <li><a href="#">Ежедневники, планинги, органайзеры, календари</a>
-                            <ul class="sub-catalog">
-                                <li><a href="#">Ежедневники, еженедельники</a></li>
-                                <li><a href="#">Календари подставки под календари</a></li>
-                                <li><a href="#">Набор с ежедневником</a>
-                                    <ul class="sub-catalog">
-                                        <li><a href="#">Ежедневники датированые</a></li>
-                                        <li><a href="#">Ежедневники недатированые</a></li>
-                                        <li><a href="#">Ежедневники полудатированые</a></li>
-                                        <li><a href="#">Еженедльники</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="#">Органайзеры</a></li>
-                                <li><a href="#">Планинги</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#">Почтовые конверты и пакеты</a></li>
-                        <li><a href="#">Тетради</a></li>
-                        <li><a href="#">Этикетки и ценники</a></li>
-                    </ul>
-                </li>
+                <li><a href="#">Бумага и бумажная продукция</a></li>
                 <li><a href="#">Демонстрационное оборудование</a></li>
                 <li><a href="#">Канцтовары</a></li>
                 <li><a href="#">Мебель</a></li>
@@ -272,34 +258,10 @@
                 <li><a href="#">Офисные принадлежности канцтовары</a></li>
                 <li><a href="#">Техника</a></li>
                 <li><a href="#">Хозяйственные товары</a></li>
-                <li><a href="#">Товары для творчества и школы</a>
-                    <ul class="sub-catalog first-sub-level">
-                        <li><a href="#">Блоки для записей, закладки</a></li>
-                        <li><a href="#">Блокноты и записные книжки</a></li>
-                        <li><a href="#">Бумага для оргтехники</a></li>
-                        <li><a href="#">Бухгалтерские книги, бланки, формы</a></li>
-                        <li><a href="#">Грамоты, дипломы, сертификаты, дизайн-бумага</a></li>
-                        <li><a href="#">Ежедневники, планинги, органайзеры, календари</a>
-                            <ul class="sub-catalog">
-                                <li><a href="#">Ежедневники, еженедельники</a></li>
-                                <li><a href="#">Календари подставки под календари</a></li>
-                                <li><a href="#">Набор с ежедневником</a>
-                                    <ul class="sub-catalog">
-                                        <li><a href="#">Ежедневники датированые</a></li>
-                                        <li><a href="#">Ежедневники недатированые</a></li>
-                                        <li><a href="#">Ежедневники полудатированые</a></li>
-                                        <li><a href="#">Еженедльники</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="#">Органайзеры</a></li>
-                                <li><a href="#">Планинги</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#">Почтовые конверты и пакеты</a></li>
-                        <li><a href="#">Тетради</a></li>
-                        <li><a href="#">Этикетки и ценники</a></li>
-                    </ul>
-                </li>
+                <li><a href="#">Товары для творчества и школы</a></li>
+                <li><a href="#">Почтовые конверты и пакеты</a></li>
+                <li><a href="#">Тетради</a></li>
+                <li><a href="#">Этикетки и ценники</a></li>
                 <li><a href="#">Распродажа</a></li>
             </ul>
         </div>
