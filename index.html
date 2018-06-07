@@ -113,7 +113,7 @@
         </div>
         <div class="modal-form-text-input">
             <p>Сообщение</p>
-            <textarea class="modal-form-textarea" title="сообщение" cols="56" rows="7" name="message"></textarea>
+            <textarea class="modal-form-textarea" title="сообщение" cols="63" rows="7" name="message"></textarea>
         </div>
         <!-- --------------------- CAPTCHA -------------------- -->
         <p class="form-submit">
@@ -127,15 +127,29 @@
     <div class="header">
         <div class="header-top">
             <div class="header-top-left">
-                <p class="header-top-left__city"><i class="material-icons">
-                    menu
-                </i> Новосибирск</p>
+                <div class="header-top-left-menu">
+                    <a href="#"><i class="material-icons">
+                        menu
+                    </i></a>
+                    <ul>
+                        <li><a href="#">О компании </a></li>
+                        <li><a href="#">Скидки</a></li>
+                        <li><a href="#">Акции</a></li>
+                        <li><a href="#">Распродажа</a></li>
+                        <li><a href="#">Заказ</a></li>
+                        <li><a href="#">Оплата</a></li>
+                        <li><a href="#">Доставка</a></li>
+                        <li><a href="#">Блог</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                </div>
+                <p class="header-top-left__city">Новосибирск</p>
             </div>
             <div class="header-top-right">
                 <p class="phone"><span class="text-blue">8 383</span> 201 84 21</p>
             </div>
             <div class="header-top-center">
-                <!-- IF USER AUTH = 1 -->
+                <!-- IF USER AUTH = 1
                 <div class="lk-block">
                     <a href="#" class="header-top-center__button-lk button-blue">name@domain.ru</a>
                     <ul class="lk-submenu">
@@ -147,16 +161,19 @@
                         <li><a href="#">Выход</a></li>
                     </ul>
                 </div>
-                <!-- IF USER AUTH = 1 -->
+                -->
                 <a class="header-top-center__button button-blue grow-down-button popup-modal"
                    href="#auth-form">Войти</a>
                 <a class="header-top-center__button button-blue grow-down-button popup-modal" href="#reg-form">Регистрация</a>
                 <a class="header-top-center__favorite-button icon-button" href="#"><i
                         class="material-icons">star_border</i>
                     <span class="button-numeric-notification">42</span></a>
-                <div class="cart-block"><a class="cart-block__cart-button icon-button" href="#">
-                    <i class="material-icons">shopping_cart</i>
+                <a class="header-top-center__cart-button icon-button" href="#"><img src="img/cart-blue.png"
+                                                                                    alt="корзина покупателя">
                     <span class="button-numeric-notification">13</span></a>
+                <p class="header-top-center__sum text-blue">101 250 р.</p>
+                <div class="cart-block">
+                    <a class="header-top-center__complete-order-button button-pink" href="#">Оформить заказ</a>
                     <div class="cart-panel">
                         <div class="cart-panel-header">
                             <p class="cart-panel-header__head-text">Ваша корзина</p>
@@ -229,8 +246,6 @@
                         </div>
                     </div>
                 </div>
-                <p class="header-top-center__sum text-blue">101 250 р.</p>
-                <a class="header-top-center__complete-order-button button-pink" href="#">Оформить заказ</a>
             </div>
         </div>
         <div class="clear"></div>
@@ -252,7 +267,190 @@
             <ul class="catalog">
                 <li><a href="#">Бумага и бумажная продукция</a></li>
                 <li><a href="#">Демонстрационное оборудование</a></li>
-                <li><a href="#">Канцтовары</a></li>
+                <li><a href="#">Канцтовары</a>
+                    <div class="submenu-wrap">
+                        <div class="inner-submenu-wrap">
+                            <ul class="submenu-level-1">
+                                <li><a href="#">Визитницы</a>
+                                    <ul class="submenu-level-2">
+                                        <li><a href="#">Визитницы - картотеки</a></li>
+                                        <li><a href="#">Визитницы карманные</a></li>
+                                        <li><a href="#">Визитницы настольные</a></li>
+                                        <li><a href="#">Запасные листы для визитниц</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="inner-submenu-wrap">
+                            <ul class="submenu-level-1">
+                                <li><a href="#">Клей</a>
+                                    <ul class="submenu-level-2">
+                                        <li><a href="#">Клей канцелярский</a></li>
+                                        <li><a href="#">Клей ПВА</a></li>
+                                        <li><a href="#">Клей-карандаш</a></li>
+                                        <li><a href="#">Клеящие ленты</a></li>
+                                        <li><a href="#">Универсальный клей</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="inner-submenu-wrap">
+                            <ul class="submenu-level-1">
+                                <li><a href="#">Дыроколы</a>
+                                    <ul class="submenu-level-2">
+                                        <li><a href="#">Дыроколы</a></li>
+                                        <li><a href="#">Расходные материалы для дыроколов</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="inner-submenu-wrap">
+                            <ul class="submenu-level-1">
+                                <li><a href="#">Коврики на стол</a></li>
+                            </ul>
+                        </div>
+                        <div class="inner-submenu-wrap">
+                            <ul class="submenu-level-1">
+                                <li><a href="#">Калькуляторы</a>
+                                    <ul class="submenu-level-2">
+                                        <li><a href="#">Калькуляторы инженерные</a></li>
+                                        <li><a href="#">Калькуляторы карманные</a></li>
+                                        <li><a href="#">Калькуляторы настольные</a></li>
+                                        <li><a href="#">Калькуляторы печатающие</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="inner-submenu-wrap">
+                            <ul class="submenu-level-1">
+                                <li><a href="#">Корректирующие средства</a>
+                                    <ul class="submenu-level-2">
+                                        <li><a href="#">Корректирующие жидкости</a></li>
+                                        <li><a href="#">Корректирующие ленты</a></li>
+                                        <li><a href="#">Корректирующие ручки</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="inner-submenu-wrap">
+                            <ul class="submenu-level-1">
+                                <li><a href="#">Канцелярские мелочи</a>
+                                    <ul class="submenu-level-2">
+                                        <li><a href="#">Брелок для ключей</a></li>
+                                        <li><a href="#">Зажимы для бумаг</a></li>
+                                        <li><a href="#">Звонки настольные</a></li>
+                                        <li><a href="#">Кнопки, булавки</a></li>
+                                        <li><a href="#">Лупа</a></li>
+                                        <li><a href="#">Скрепки, диспенсеры для скрепок</a></li>
+                                        <li><a href="#">Смачиватели пальцев</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="inner-submenu-wrap">
+                            <ul class="submenu-level-1">
+                                <li><a href="#">Канцелярские наборы и подставки</a>
+                                    <ul class="submenu-level-2">
+                                        <li><a href="#">Канцелярские наборы пластиковые</a>
+                                            <ul class="submenu-level-3">
+                                                <li><a href="#">Наборы детские</a></li>
+                                                <li><a href="#">Наборы офисные</a></li>
+                                            </ul></li>
+                                        <li><a href="#">Настольные наборы и акксесуары из дерева</a></li>
+                                        <li><a href="#">Настольные наборы из кожи</a></li>
+                                        <li><a href="#">Настольные наборы металлические</a></li>
+                                        <li><a href="#">Подставка для карандашей и ручек</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="inner-submenu-wrap">
+                            <ul class="submenu-level-1">
+                                <li><a href="#">Ножницы</a>
+                                    <ul class="submenu-level-2">
+                                        <li><a href="#">Детские ножницы</a></li>
+                                        <li><a href="#">Офисные ножницы</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="inner-submenu-wrap">
+                            <ul class="submenu-level-1">
+                                <li><a href="#">Калькуляторы</a>
+                                    <ul class="submenu-level-2">
+                                        <li><a href="#">Калькуляторы инженерные</a></li>
+                                        <li><a href="#">Калькуляторы карманные</a></li>
+                                        <li><a href="#">Калькуляторы настольные</a></li>
+                                        <li><a href="#">Калькуляторы печатающие</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="inner-submenu-wrap">
+                            <ul class="submenu-level-1">
+                                <li><a href="#">Резина для денег</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="inner-submenu-wrap">
+                            <ul class="submenu-level-1">
+                                <li><a href="#">Степлеры, скобы, антистеплеры</a>
+                                    <ul class="submenu-level-2">
+                                        <li><a href="#">Антистеплеры</a></li>
+                                        <li><a href="#">Скобы для степлеров</a></li>
+                                        <li><a href="#">Степлеры</a><ul class="submenu-level-3">
+                                            <li><a href="#">Степлеры №10</a></li>
+                                            <li><a href="#">Степлеры №24</a></li>
+                                            <li><a href="#">Степлеры мощные</a></li>
+                                        </ul></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="inner-submenu-wrap">
+                            <ul class="submenu-level-1">
+                                <li><a href="#">Канцелярские ножи и коврики для резки</a>
+                                    <ul class="submenu-level-2">
+                                        <li><a href="#">Коврики для резки</a></li>
+                                        <li><a href="#">Лезвие к ножам</a></li>
+                                        <li><a href="#">Ножи канцелярские</a></li>
+                                        <li><a href="#">Ножи универсальные</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="inner-submenu-wrap">
+                            <ul class="submenu-level-1">
+                                <li><a href="#">Канцтовары класса люкс</a>
+                                    <ul class="submenu-level-2">
+                                        <li><a href="#">Настольные наборы и аксессуары класса люкс</a></li>
+                                        <li><a href="#">Ручки класса люкс</a></li>
+
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="inner-submenu-wrap">
+                            <ul class="submenu-level-1">
+                                <li><a href="#">Штемпельная продукция</a>
+                                    <ul class="submenu-level-2">
+                                        <li><a href="#">Датеры и нумераторы</a></li>
+                                        <li><a href="#">Подушки сменные</a></li>
+                                        <li><a href="#">Кассы</a></li>
+                                        <li><a href="#">Штампы самонаборные</a></li>
+                                        <li><a href="#">Крупные самонаборные печати</a></li>
+                                        <li><a href="#">Штампы стандартных слов</a></li>
+                                        <li><a href="#">Оснастки для печатей и штампов</a></li>
+                                        <li><a href="#">Штемпльные краски</a></li>
+                                        <li><a href="#">Подушки настольные</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+
+
+                    </div>
+                </li>
                 <li><a href="#">Мебель</a></li>
                 <li><a href="#">Офисная кухня</a></li>
                 <li><a href="#">Офисные принадлежности канцтовары</a></li>
@@ -292,8 +490,8 @@
                     <div class="goods-item-bottom">
                         <p class="goods-item-bottom__old-price text-pink">135.41 р.</p>
                         <p class="goods-item-bottom__price">121.87 р.</p>
-                        <a href="#" class="goods-item-bottom__to-cart"><i
-                                class="material-icons">add_shopping_cart</i></a>
+                        <a href="#" class="goods-item-bottom__to-cart"><img src="img/cart-white.png"
+                                                                            alt="добавить в корзину"></a>
                     </div>
                 </div>
                 <div class="goods-item">
@@ -306,8 +504,8 @@
                     <div class="goods-item-bottom">
                         <p class="goods-item-bottom__old-price text-pink">227.15 р.</p>
                         <p class="goods-item-bottom__price">193.08 р.</p>
-                        <a href="#" class="goods-item-bottom__to-cart"><i
-                                class="material-icons">add_shopping_cart</i></a>
+                        <a href="#" class="goods-item-bottom__to-cart"><img src="img/cart-white.png"
+                                                                            alt="добавить в корзину"></a>
                     </div>
                 </div>
                 <div class="goods-item">
@@ -321,8 +519,8 @@
                     <div class="goods-item-bottom">
                         <p class="goods-item-bottom__old-price text-pink">2.43 р.</p>
                         <p class="goods-item-bottom__price">2.19 р.</p>
-                        <a href="#" class="goods-item-bottom__to-cart"><i
-                                class="material-icons">add_shopping_cart</i></a>
+                        <a href="#" class="goods-item-bottom__to-cart"><img src="img/cart-white.png"
+                                                                            alt="добавить в корзину"></a>
                     </div>
                 </div>
                 <div class="goods-item">
@@ -335,8 +533,8 @@
                     <div class="goods-item-bottom">
                         <p class="goods-item-bottom__old-price text-pink">6693.50 р.</p>
                         <p class="goods-item-bottom__price">6024.15 р.</p>
-                        <a href="#" class="goods-item-bottom__to-cart"><i
-                                class="material-icons">add_shopping_cart</i></a>
+                        <a href="#" class="goods-item-bottom__to-cart"><img src="img/cart-white.png"
+                                                                            alt="добавить в корзину"></a>
                     </div>
                 </div>
                 <div class="goods-item">
@@ -350,8 +548,8 @@
                     <div class="goods-item-bottom">
                         <p class="goods-item-bottom__old-price text-pink">135.41 р.</p>
                         <p class="goods-item-bottom__price">121.87 р.</p>
-                        <a href="#" class="goods-item-bottom__to-cart"><i
-                                class="material-icons">add_shopping_cart</i></a>
+                        <a href="#" class="goods-item-bottom__to-cart"><img src="img/cart-white.png"
+                                                                            alt="добавить в корзину"></a>
                     </div>
                 </div>
                 <div class="goods-item">
@@ -364,8 +562,8 @@
                     <div class="goods-item-bottom">
                         <p class="goods-item-bottom__old-price text-pink">227.15 р.</p>
                         <p class="goods-item-bottom__price">193.08 р.</p>
-                        <a href="#" class="goods-item-bottom__to-cart"><i
-                                class="material-icons">add_shopping_cart</i></a>
+                        <a href="#" class="goods-item-bottom__to-cart"><img src="img/cart-white.png"
+                                                                            alt="добавить в корзину"></a>
                     </div>
                 </div>
                 <div class="goods-item">
@@ -379,8 +577,8 @@
                     <div class="goods-item-bottom">
                         <p class="goods-item-bottom__old-price text-pink">2.43 р.</p>
                         <p class="goods-item-bottom__price">2.19 р.</p>
-                        <a href="#" class="goods-item-bottom__to-cart"><i
-                                class="material-icons">add_shopping_cart</i></a>
+                        <a href="#" class="goods-item-bottom__to-cart"><img src="img/cart-white.png"
+                                                                            alt="добавить в корзину"></a>
                     </div>
                 </div>
                 <div class="goods-item">
@@ -393,8 +591,8 @@
                     <div class="goods-item-bottom">
                         <p class="goods-item-bottom__old-price text-pink">6693.50 р.</p>
                         <p class="goods-item-bottom__price">6024.15 р.</p>
-                        <a href="#" class="goods-item-bottom__to-cart"><i
-                                class="material-icons">add_shopping_cart</i></a>
+                        <a href="#" class="goods-item-bottom__to-cart"><img src="img/cart-white.png"
+                                                                            alt="добавить в корзину"></a>
                     </div>
                 </div>
             </div>
@@ -481,5 +679,15 @@
 <script src="js/jquery.magnific-popup.min.js"></script>
 <script src="js/carousel.js"></script>
 <script src="js/modal-popup.js"></script>
+<script>
+    $('.submenu-wrap').bind('mousewheel', function (e) {
+
+        $(this).scrollTop($(this).scrollTop() - e.originalEvent.wheelDeltaY);
+
+        //prevent page fom scrolling
+        return false;
+
+    });
+</script>
 </body>
 </html>

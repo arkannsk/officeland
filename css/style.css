@@ -71,11 +71,55 @@ body {
 
 .header-top-left {
     float: left;
-    margin-left: 20px;
+    margin-left: 5px;
+    width: 250px;
+}
+.header-top-left-menu{
+    float: left;
+    position: relative;
+}
+.header-top-left-menu > ul{
+    display: none;
+    padding: 5px;
+    z-index: 2;
+    position: absolute;
+    left: 5px;
+    top: 35px;
+    background-color: #fff;
+    text-align: center;
+    
+}
+.header-top-left-menu i{
+    color: #1C4573;
+    font-size:2.8em;
 }
 
+.header-top-left-menu > ul > li > a{
+    font-size: 0.9em;
+    white-space: nowrap;
+    display: block;
+    padding: 12px 35px;
+    text-transform: uppercase;
+    color: black;
+    text-decoration: none;
+}
+
+.header-top-left-menu > ul > li > a:hover{
+    color: #fff;
+    background-color: #E6006F;
+}
+
+.header-top-left-menu:hover ul{
+    display: block;
+}
+.header-top-left-menu ul:hover{
+    display: block;
+}
+
+
 .header-top-left__city {
-    padding-top: 17px;
+    margin-left: 60px;
+    padding-top: 15px;
     text-transform: uppercase;
 }
 
@@ -181,6 +225,10 @@ body {
     padding: 20px 5px 20px 0;
 }
 
+.header-top-center__cart-button img{
+     width: 30px;
+}
+
 .header-top-center__complete-order-button {
     font-size: 0.9em;
     text-align: center;
@@ -196,7 +244,6 @@ body {
 .cart-block {
     position: relative;
     float: left;
-    padding-top: 15px;
 }
 
 .cart-block:hover .cart-panel {
@@ -211,7 +258,7 @@ body {
     z-index: 2;
     position: absolute;
     top: 48px;
-    left: -193px;
+    right: 0;
     width: 448px;
     height: 340px;
     background: rgba(255, 255, 255, 0.9);
@@ -385,10 +432,6 @@ body {
     line-height: 1.15em;
 }
 
-.catalog a:hover {
-    color: #fff;
-}
-
 .catalog a {
     font-size: 0.9em;
     color: #000;
@@ -396,11 +439,91 @@ body {
     text-decoration: none;
     padding: 10px 5px;
     text-transform: uppercase;
+    outline: none;
 }
 
-.catalog li:hover {
-    background-color: #E6006F;
+.catalog > li > a:hover {
     color: #FFF;
+    background-color: #E6006F;
+}
+.catalog > li:hover .submenu-wrap {
+
+    display: flex;
+}
+
+.submenu-wrap {
+    display: none;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-between;
+    border: 2px solid #E6006F;
+    position: absolute;
+    top: 0;
+    left:238px;
+    width: 900px;
+    background-color: #fff;
+    z-index: 2;
+    min-height: 510px;
+    max-height: 905px;
+    overflow-y: scroll;
+    padding: 20px;
+
+}
+
+.inner-submenu-wrap{
+    margin: 8px;
+    width: 250px;
+}
+
+.submenu-wrap a:hover{
+    color: #E6006F;
+}
+
+.submenu-level-1 > li > a{
+    font-weight: bold;
+}
+.submenu-level-2 {
+    position: relative;
+    display: block;
+    margin-left: 25px;
+}
+.submenu-level-2 > li > a{
+    text-transform: none;
+    padding: 5px;
+}
+.submenu-level-2 > li:hover .submenu-level-3{
+    display: block;
+}
+.submenu-level-2 > li{
+    position: relative;
+}
+
+.submenu-level-3{
+    max-width: 140px;
+    display: none;
+    top: -5px;
+    padding: 10px 15px;
+    z-index: 3;
+    position: absolute;
+    right: -110px;
+    background-color: #F1F1F1;
+}
+
+.submenu-level-3:before {
+    background-color: #F1F1F1;
+    content: '';
+    position: absolute;
+    left: -1px;
+    border: 8px solid transparent;
+    margin-right: -16px;
+    transform-origin: 0 0;
+    transform: rotate(225deg);
+    top: calc(2% + 30px);
+}
+
+.submenu-level-3 a{
+    font-size: 0.7em;
+    text-transform: none;
 }
 
 .middle-right {
@@ -555,11 +678,11 @@ body {
     background-color: #1C4573;
 }
 
-.goods-item-bottom__to-cart > i {
-    font-size: 25px;
+.goods-item-bottom__to-cart > img {
     position: relative;
-    top: 7px;
-    left: 23px;
+    top: 0;
+    left: 20px;
+    height:34px;
     color: #F1F1F1;
 }
 
@@ -735,41 +858,6 @@ body {
     text-decoration: none;
     color: #fff;
 }
-
-.catalog-selected {
-    background-color: #E6006F;
-    color: #FFF;
-}
-
-.catalog .catalog-selected > a {
-    color: #FFF;
-}
-
-.sub-catalog li {
-    box-sizing: border-box;
-}
-
-.sub-catalog {
-    position: absolute;
-    top: 0;
-    left: 320px;
-    width: 320px;
-    margin-left: 1px;
-    background-color: #fff;
-    z-index: 2;
-    opacity: 0.95;
-    min-height: 400px;
-    padding: 0 5px 20px 5px;
-}
-
-.catalog-border-left {
-    border-left: 4px solid #E6006F;
-}
-
-.first-sub-level {
-    left: 235px;
-}
-
 /* ------------ MODAL ---------------   */
 
 .white-popup {

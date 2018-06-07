@@ -32,8 +32,8 @@ $(function () {
                 loop: true
             }
         },
-        autoplay: true,
-        autoplayTimeout: 2500,
+        autoplay: false,
+        autoplayTimeout: 3000,
         // Navigation
         nav: true,
         navText: ["<img src=\"img/arrow_left.png\">", "<img src=\"img/arrow_right.png\">"]
