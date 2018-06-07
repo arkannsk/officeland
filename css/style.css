@@ -51,6 +51,9 @@ table {
     border-spacing: 0;
 
 }
+a{
+    outline: none;
+}
 
 body {
     position: relative;
@@ -66,6 +69,7 @@ body {
     margin: 0 auto;
     overflow: hidden;
     min-height: calc(100vh - 80px);
+    min-height: -webkit-calc(100% - 80px);
 }
 
 .header-top {
@@ -429,6 +433,7 @@ body {
 
 .catalog {
     position: relative;
+    cursor:pointer;
 }
 
 .catalog > li {
