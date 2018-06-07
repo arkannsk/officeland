@@ -57,6 +57,9 @@ body {
     background: #F1F1F1;
 
 }
+.mobile-menu{
+    display: none;
+}
 
 .container {
     width: 1198px;
@@ -450,6 +453,10 @@ body {
 
     display: flex;
 }
+.catalog > li:hover > a {
+    color: #FFF;
+    background-color: #E6006F;
+}
 
 .submenu-wrap {
     display: none;
@@ -835,6 +842,9 @@ body {
     text-transform: uppercase;
     color: #3f3e40;
 }
+.footer-left > ul > li > a:hover{
+    text-decoration: underline;
+}
 
 .footer-right {
     float: right;
@@ -858,6 +868,66 @@ body {
     text-decoration: none;
     color: #fff;
 }
+.checkbox {
+    display: none;
+}
+
+.checkbox-custom {
+    width: 20px;
+    height: 20px;
+    border: 2px solid #ccc;
+    border-radius: 3px;
+    position: relative;
+    margin-right: 10px;
+}
+
+.checkbox-custom,
+.label {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.checkbox:checked + .checkbox-custom::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    bottom: 2px;
+    left: 2px;
+    background: #1C4573;
+
+}
+
+.clear {
+    clear: both;
+}
+
+.phone {
+    font-size: 0.9em;
+}
+
+.text-blue {
+    color: #1C4573;
+}
+
+.text-pink {
+    color: #E6006F;
+}
+
+.button-blue {
+    color: #fff;
+    background-color: #1C4573;
+}
+
+.button-pink {
+    background-color: #E6006F;
+}
+
+#login-modal {
+    display: none;
+}
+
 /* ------------ MODAL ---------------   */
 
 .white-popup {
@@ -868,6 +938,9 @@ body {
     max-width: 500px;
     min-height: 320px;
     margin: 20px auto;
+}
+.white-popup textarea:focus{
+    outline: #1C4573 solid 1px;
 }
 
 .mfp-close {
@@ -938,6 +1011,9 @@ body {
     border: 0;
     resize: none;
     background-color: #f1f1f1;
+    width: 87%;
+    height: 150px;
+    overflow: hidden;
 }
 
 .modal-form-checkbox {
@@ -967,63 +1043,3 @@ body {
 }
 
 /* ------------ MODAL ---------------   */
-
-.checkbox {
-    display: none;
-}
-
-.checkbox-custom {
-    width: 20px;
-    height: 20px;
-    border: 2px solid #ccc;
-    border-radius: 3px;
-    position: relative;
-    margin-right: 10px;
-}
-
-.checkbox-custom,
-.label {
-    display: inline-block;
-    vertical-align: middle;
-}
-
-.checkbox:checked + .checkbox-custom::before {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 2px;
-    right: 2px;
-    bottom: 2px;
-    left: 2px;
-    background: #1C4573;
-
-}
-
-.clear {
-    clear: both;
-}
-
-.phone {
-    font-size: 0.9em;
-}
-
-.text-blue {
-    color: #1C4573;
-}
-
-.text-pink {
-    color: #E6006F;
-}
-
-.button-blue {
-    color: #fff;
-    background-color: #1C4573;
-}
-
-.button-pink {
-    background-color: #E6006F;
-}
-
-#login-modal {
-    display: none;
-}

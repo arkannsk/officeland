@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="css/banner-slider.css">
     <link rel="stylesheet" href="css/magnific-popup.css">
     <link rel="stylesheet" href="css/style.css">
-    <!--<link rel="stylesheet" href="css/media.css">-->
+    <link rel="stylesheet" href="css/media.css">
     <title>Office Land</title>
 </head>
 <body>
@@ -113,7 +113,7 @@
         </div>
         <div class="modal-form-text-input">
             <p>Сообщение</p>
-            <textarea class="modal-form-textarea" title="сообщение" cols="63" rows="7" name="message"></textarea>
+            <textarea class="modal-form-textarea" title="сообщение" rows="1" name="message"></textarea>
         </div>
         <!-- --------------------- CAPTCHA -------------------- -->
         <p class="form-submit">
@@ -124,6 +124,30 @@
     </form>
 </div>
 <div class="container">
+    <div class="mobile-menu">
+        <div class="mobile-menu-top">
+            <div class="mobile-menu-top-menu">
+                <a href="#"><i class="material-icons">
+                    menu
+                </i></a>
+                <ul>
+                    <li><a href="#">О компании </a></li>
+                    <li><a href="#">Скидки</a></li>
+                    <li><a href="#">Акции</a></li>
+                    <li><a href="#">Распродажа</a></li>
+                    <li><a href="#">Заказ</a></li>
+                    <li><a href="#">Оплата</a></li>
+                    <li><a href="#">Доставка</a></li>
+                    <li><a href="#">Блог</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+                <a href="#" class="logo"><img src="img/logo.png" alt="логотип"/></a>
+            </div>
+        </div>
+        <div class="mobile-menu-bottom">
+
+        </div>
+    </div>
     <div class="header">
         <div class="header-top">
             <div class="header-top-left">
@@ -256,12 +280,8 @@
                 <a href="#" class="header-search-right__button-search button-blue">Найти</a>
             </div>
         </div>
-        <div style="display: none" class="mobile-menu">
-
-        </div>
     </div>
     <div class="middle">
-
         <div class="middle-left">
             <p class="middle-left__head">Каталог</p>
             <ul class="catalog">
@@ -670,24 +690,14 @@
         <div class="footer-right">
             <p class="phone"><span class="text-blue">8 383</span> 201 84 21</p>
             <a href="#callback-form" class="button-blue popup-modal">заказать звонок</a>
-            <a href="#" class="logo"><img src="img/logo.png" alt="логотип"/></a>
+
         </div>
     </div>
 </div>
 <script src="js/jquery-3.3.1.min.js"></script>
 <script src="js/owl.carousel.min.js"></script>
 <script src="js/jquery.magnific-popup.min.js"></script>
-<script src="js/carousel.js"></script>
 <script src="js/modal-popup.js"></script>
-<script>
-    $('.submenu-wrap').bind('mousewheel', function (e) {
-
-        $(this).scrollTop($(this).scrollTop() - e.originalEvent.wheelDeltaY);
-
-        //prevent page fom scrolling
-        return false;
-
-    });
-</script>
+<script src="js/carousel.js"></script>
 </body>
 </html>
