@@ -207,4 +207,14 @@
         display: none;
     }
 
+    .big-text-head{
+        font-size: 1.7em;
+        padding: 10px;
+        line-height: 1.3;
+    }
+
+    .two-col-block{
+        flex-direction: column;
+    }
+
 }

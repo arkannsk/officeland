@@ -1,0 +1,75 @@
+.how-to-buy{
+    background-color: #fff;
+    text-align: left;
+}
+
+.how-to-buy .middle-right-block__head{
+    background-color: #fff;
+}
+
+.how-to-buy-middle-right-block__head{
+
+    display: table;
+    margin: 0 auto;
+    padding: 0 10px;
+    background-color: #F0F0F0;
+    font-weight: bold;
+    position: relative;
+    text-transform: uppercase;
+    top: -15px;
+    font-size: 1.5em;
+    letter-spacing: 1px;
+}
+
+.big-text-head{
+    padding:20px 80px;
+    text-align: center;
+    line-height: 1.4;
+    font-size: 1.9em;
+}
+
+.two-col-block{
+    margin-top: 10px;
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+}
+.two-col-block__left > .simple-text{
+    text-align: center;
+}
+.numeric-text-head{
+    font-size: 2em;
+    color: #c9c9c9;
+}
+
+.stripe-table {
+    text-align: left;
+    padding: 10px;
+}
+
+.stripe-table tr:nth-child(odd){
+    background-color: #EDEDED;
+}
+
+.stripe-table th{
+    padding: 5px;
+    font-size: 1.2em;
+    font-weight: bold;
+    background-color: #fff;
+}
+.stripe-table th:nth-child(2) {
+    text-align: right;
+    padding-right: 30px;
+}
+
+.stripe-table td{
+    padding: 20px 35px;
+}
+.stripe-table td:nth-child(1){
+    width: 600px;
+    padding: 15px;
+}
+
+.stripe-table td:nth-child(2){
+    text-align: right;
+}

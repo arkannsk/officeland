@@ -706,7 +706,7 @@ body {
 }
 .middle-right-block{
     text-align: center;
-    margin-top: 25px;
+    margin-top: 50px;
     border-top: 2px solid #E3E3E3;
 }
 
@@ -954,7 +954,25 @@ body {
 
 a.to-cart{
     background-color: #375980;
+    position: relative;
 }
+a.to-cart:hover{
+    background-color: #E6006F;
+}
+.text-head{
+    padding: 15px;
+    text-align: left;
+    font-size: 1.8em;
+}
+
+.simple-text{
+    text-align: left;
+    padding: 15px;
+    line-height: 1.2;
+    font-size: 1.2em;
+
+}
+
 .text-bold{
     font-weight: bold;
 }

@@ -18,6 +18,7 @@
     background-color: #fff;
 }
 .favourites__item__right{
+    text-align: left;
     flex-shrink: 2.65;
     margin-left: 10px;
     padding: 10px;
@@ -31,6 +32,8 @@
     text-decoration: none;
     font-size: 1.2em;
     margin-top: 15px;
+    min-width: 168px;
+
 
 }
 .favourites__item__delete-from-favourites{
