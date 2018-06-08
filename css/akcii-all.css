@@ -1,0 +1,36 @@
+.all-akcii{
+    margin-top: 50px;
+}
+.all-akcii__item:nth-child(2){
+    padding-bottom: 65px;
+}
+.all-akcii__item{
+    position: relative;
+    padding: 50px 25px 80px 25px;
+    background-color: #fff;
+
+}
+.all-akcii__item > img{
+    width: 100%;
+    background-size: cover;
+}
+.all-akcii__item a{
+    min-height: 25px;
+    max-width: 42%;
+    margin-top: 5px;
+    display: block;
+    padding: 15px 10px;
+    text-decoration: none;
+    color: #FFF;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.all-akcii .button-left{
+    float: left;
+    background-color: #1C4573;
+
+}
+.all-akcii .button-right{
+    float: right;
+    background-color: #E6006F;
+}

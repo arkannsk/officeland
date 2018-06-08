@@ -1,0 +1,40 @@
+.about-akciya{
+    margin-top: 50px;
+}
+.about-akciya__item{
+    position: relative;
+    padding: 50px 25px 80px 25px;
+    background-color: #fff;
+
+}
+.about-akciya__item > img{
+    width: 100%;
+    background-size: cover;
+}
+.about-akciya__item a{
+    max-width: 42%;
+    min-height: 25px;
+    margin-top: 5px;
+    display: block;
+    padding: 15px 10px;
+    text-decoration: none;
+    color: #FFF;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.about-akciya .button-left{
+    float: left;
+    background-color: #1C4573;
+
+}
+.about-akciya .button-right{
+    float: right;
+    background-color: #E6006F;
+}
+.about-akciya .akciya-description{
+    text-indent: 10px;
+    text-align: left;
+    font-size: 1.2em;
+    margin-top: 15px;
+    line-height: 1.2;
+}
