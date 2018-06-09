@@ -18,6 +18,9 @@
     background-color: #fff;
 }
 .favourites__item__right{
+    display: flex;
+    align-content: center;
+    align-items: flex-end;
     text-align: left;
     flex-shrink: 2.65;
     margin-left: 10px;

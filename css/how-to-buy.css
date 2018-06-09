@@ -1,10 +1,21 @@
 .how-to-buy{
+    position: relative;
     background-color: #fff;
     text-align: left;
+    padding-bottom: 40px;
 }
 
 .how-to-buy .middle-right-block__head{
     background-color: #fff;
+}
+.how-to-buy-head{
+    position: relative;
+    background-color: #fff;
+}
+.how-to-buy-head > img{
+    width: 100%;
+    -webkit-background-size: cover;
+    background-size: cover;
 }
 
 .how-to-buy-middle-right-block__head{
@@ -21,55 +32,3 @@
     letter-spacing: 1px;
 }
 
-.big-text-head{
-    padding:20px 80px;
-    text-align: center;
-    line-height: 1.4;
-    font-size: 1.9em;
-}
-
-.two-col-block{
-    margin-top: 10px;
-    padding: 15px;
-    display: flex;
-    flex-direction: row;
-}
-.two-col-block__left > .simple-text{
-    text-align: center;
-}
-.numeric-text-head{
-    font-size: 2em;
-    color: #c9c9c9;
-}
-
-.stripe-table {
-    text-align: left;
-    padding: 10px;
-}
-
-.stripe-table tr:nth-child(odd){
-    background-color: #EDEDED;
-}
-
-.stripe-table th{
-    padding: 5px;
-    font-size: 1.2em;
-    font-weight: bold;
-    background-color: #fff;
-}
-.stripe-table th:nth-child(2) {
-    text-align: right;
-    padding-right: 30px;
-}
-
-.stripe-table td{
-    padding: 20px 35px;
-}
-.stripe-table td:nth-child(1){
-    width: 600px;
-    padding: 15px;
-}
-
-.stripe-table td:nth-child(2){
-    text-align: right;
-}

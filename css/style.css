@@ -259,7 +259,6 @@ body {
 
 .cart-panel {
     display: none;
-    padding: 10px;
     overflow: hidden;
     border-top: 2px solid #E6006F;
     z-index: 2;
@@ -268,7 +267,7 @@ body {
     right: 0;
     width: 448px;
     height: 340px;
-    background: rgba(255, 255, 255, 0.9);
+    background: #fff;
 }
 
 .cart-panel-header {
@@ -325,7 +324,7 @@ body {
     bottom: 0;
     height: 120px;
     text-align: center;
-    background: rgba(241, 241, 241, 0.8);
+    background: rgba(228, 228, 228, 0.9);
 }
 
 .cart-panel-bottom p {
@@ -814,7 +813,6 @@ body {
 
 .footer > .container {
     min-height: auto;
-    width: auto;
 }
 
 .footer {
@@ -913,7 +911,7 @@ body {
     color: #1C4573;
 }
 /* --------------- Goods-count block ----------------  */
-
+/* ----------------Global ---------------------------- */
 
 .checkbox {
     display: none;
@@ -972,6 +970,9 @@ a.to-cart:hover{
     font-size: 1.2em;
 
 }
+.text-center{
+    text-align: center;
+}
 
 .text-bold{
     font-weight: bold;
@@ -1002,9 +1003,69 @@ a.to-cart:hover{
     background-color: #E6006F;
 }
 
-#login-modal {
-    display: none;
+
+.big-text-head{
+    padding:20px 80px;
+    text-align: center;
+    line-height: 1.4;
+    font-size: 1.9em;
 }
+
+.two-col-block{
+    margin-top: 10px;
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+}
+.two-col-block__left > .simple-text{
+    text-align: center;
+}
+.numeric-text-head{
+    font-size: 2em;
+    color: #c9c9c9;
+}
+
+.stripe-table {
+    overflow-y: scroll;
+    text-align: left;
+    padding: 10px;
+    width: 95%;
+    margin-left: 25px;
+}
+
+.stripe-table tr:nth-child(odd){
+    background-color: #EDEDED;
+}
+
+.stripe-table th{
+    padding: 25px;
+    font-size: 1.2em;
+    font-weight: bold;
+    background-color: #fff;
+    text-align: left;
+}
+
+
+.stripe-table td{
+    max-width: 160px;
+    -webkit-appearance: none;
+    padding: 25px 35px;
+}
+.stripe-table td:nth-child(1){
+
+    padding: 15px 80px 0 15px;
+}
+
+.dot-grey{
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    width: 15px;
+    height: 15px;
+    background-color: #BABABA;
+
+}
+/* ----------------Global ---------------------------- */
 
 /* ------------ MODAL ---------------   */
 
