@@ -470,7 +470,7 @@ body {
     display: none;
     flex-direction: row;
     flex-wrap: wrap;
-    align-content: space-between;
+    align-content: baseline;
     border: 2px solid #E6006F;
     position: absolute;
     top: 0;
@@ -478,16 +478,19 @@ body {
     width: 900px;
     background-color: #fff;
     z-index: 2;
-    min-height: 510px;
-    max-height: 905px;
-    overflow-y: scroll;
+    min-height: 570px;
     padding: 20px;
 
 }
 
 .inner-submenu-wrap{
-    margin: 8px;
-    width: 250px;
+    float: left;
+    display: inline-block;
+}
+.submenu-level-1{
+    display: inline-block;
+    width: 200px;
+    margin: 10px;
 }
 
 .submenu-wrap a:hover{
@@ -496,6 +499,9 @@ body {
 
 .submenu-level-1 > li > a{
     font-weight: bold;
+}
+.submenu-level-1 ul{
+    display: none;
 }
 .submenu-level-2 {
     position: relative;
@@ -506,40 +512,22 @@ body {
     text-transform: none;
     padding: 5px;
 }
-.submenu-level-2 > li:hover .submenu-level-3{
-    display: block;
-}
+
 .submenu-level-2 > li{
     position: relative;
 }
 
 .submenu-level-3{
-    max-width: 140px;
+    margin-left: 15px;
+    font-size: 0.85em;
     display: none;
-    top: -5px;
-    padding: 10px 15px;
-    z-index: 3;
-    position: absolute;
-    right: -110px;
-    background-color: #F1F1F1;
 }
-
-.submenu-level-3:before {
-    background-color: #F1F1F1;
-    content: '';
-    position: absolute;
-    left: -1px;
-    border: 8px solid transparent;
-    margin-right: -16px;
-    transform-origin: 0 0;
-    transform: rotate(225deg);
-    top: calc(2% + 30px);
-}
-
 .submenu-level-3 a{
-    font-size: 0.7em;
+    padding: 2px;
+    margin: 3px 0;
     text-transform: none;
 }
+
 
 .middle-right {
     padding: 5px;
@@ -1065,6 +1053,17 @@ a.to-cart:hover{
     background-color: #BABABA;
 
 }
+.open-sub-menu{
+
+}
+
+.open-sub-menu i{
+    top: 2px;
+    position: relative;
+    font-size: 1.2em;
+}
+
+
 /* ----------------Global ---------------------------- */
 
 /* ------------ MODAL ---------------   */
