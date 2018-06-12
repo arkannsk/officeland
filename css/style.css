@@ -1092,6 +1092,10 @@ a.to-favourites > i{
     background-color: #BABABA;
 
 }
+.open-sub-menu {
+    display: block;
+}
+
 .open-sub-menu  i{
     float: right;
     position: relative;

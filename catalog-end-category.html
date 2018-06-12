@@ -8,9 +8,11 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
           rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.css" type="text/css" media="all" />
     <link rel="stylesheet" href="css/goods-slider.css">
     <link rel="stylesheet" href="css/banner-slider.css">
     <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/catalog.css">
     <link rel="stylesheet" href="css/media.css">
@@ -298,6 +300,11 @@
                 <form action="/" method="get">
                     <div class="filter__range">
                         <p>Цена, р.</p>
+                            <p></p>
+                            <input id="mixMoneyVal" type="text" name="min-val" value="100">
+                            <span>-</span>
+                            <input id="maxMoneyVal" type="text" name="max-val" value="500">
+                        <div id="buy_price"></div>
                     </div>
                     <div class="filter__checkbox-block">
                         <a class="open-sub-menu" href="#">Производитель <i class="material-icons">keyboard_arrow_up</i></a>
@@ -341,6 +348,29 @@
                             </div></li>
                         </ul>
                     </div>
+                    <div class="filter__checkbox-block">
+                        <a class="open-sub-menu" href="#">Формат <i class="material-icons">keyboard_arrow_up</i></a>
+                        <ul>
+                            <li>
+                                <div>
+                                    <label>
+                                        <input class="checkbox" type="checkbox" name="format[]">
+                                        <span class="checkbox-custom"></span>
+                                        <span class="label">A5</span>
+                                    </label>
+                                </div>
+                            </li>
+                            <li><div>
+                                <label>
+                                    <input class="checkbox" type="checkbox" name="format[]">
+                                    <span class="checkbox-custom"></span>
+                                    <span class="label">A6</span>
+                                </label>
+                            </div></li>
+                        </ul>
+                    </div>
+                    <a class="filter-button button-blue" href="#">Применить</a>
+                    <a class="filter-button clear-all-button" href="#">Очистить все</a>
                 </form>
             </div>
         </div>
@@ -683,5 +713,33 @@
 <script src="js/modal-popup.js"></script>
 <script src="js/carousel.js"></script>
 <script src="js/sub-menu-open.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script>
+    $(document).ready(function() {
+        var maxMoneyVal = $('#maxMoneyVal').val(),
+            minMoneyVal = $('#mixMoneyVal').val();
+        $("#buy_price").slider({
+            range: true,
+            min: 0, // минимальное значение цены
+            max: 700, // максимальное значение цены
+            step: 50, // шаг слайдера
+            values: [ minMoneyVal, maxMoneyVal],  // начальные значения - позиции ползунков на шкале
+            slide: function( event, ui ) {
+                $( "input[name=min-val]" ).val(  ui.values[ 0 ] ); // выводим  значение от
+                $( "input[name=max-val]" ).val(  ui.values[ 1 ] ); // выводим  значение до
+            },
+            stop: function(event, ui) { show(); } // выполняем действие  после остановки ползунка, в нашем случае функция show
+        });
+
+    });
+</script>
+<script>
+    $(function () {
+        $('.clear-all-button').click(function() {
+            $('input:checked').prop('checked', false);
+        });
+    });
+</script>
+
 </body>
 </html>

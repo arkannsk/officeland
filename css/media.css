@@ -158,6 +158,12 @@
     .catalog div {
         visibility: hidden;
     }
+    .filter{
+        margin: 0;
+    }
+    .filter ul{
+        display: none;
+    }
 
     .middle-right {
         margin: 0;
