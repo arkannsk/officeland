@@ -1,0 +1,56 @@
+
+.contacts .two-col-block {
+    margin: 0;
+    background-color: #fff;
+}
+
+.contacts .bigger-text{
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.contacts .two-col-block__right{
+    padding: 15px;
+    text-align: center;
+}
+.contacts p{
+    margin-top: 10px;
+    line-height: 1.2;
+}
+
+.contacts .two-col-block__left{
+    padding: 15px;
+    flex-shrink: 2;
+}
+.contacts form{
+ text-align: left;
+    overflow: hidden;
+}
+.contacts input[type=submit]{
+    width: 100%;
+    margin-top: 10px;
+}
+
+.contacts-textarea{
+    width: 95%;
+    resize: none;
+}
+
+.text-with-input{
+    min-width: 49%;
+    float: left;
+    display: block;
+    text-align: left;
+    padding: 5px 0;
+    margin-left: 5px;
+
+}
+.text-with-input>input{
+    width: 97%;
+}
+
+.text-with-input p{
+    text-align: left;
+    font-weight: bold;
+    margin: 5px 0;
+}

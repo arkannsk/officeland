@@ -396,11 +396,14 @@ body {
     padding: 5px;
 }
 
-.header-search-right__input {
+.header-search-right .header-search-right__input {
     width: 810px;
     border-radius: 0;
     padding: 10px;
     border: 1px solid #1C4573;
+    background-color: #fff;
+    margin: 0;
+    height: auto;
 }
 
 .header-search-right__button-search {
@@ -931,6 +934,24 @@ body {
     background: #1C4573;
 
 }
+input[type=text]{
+    background-color: #f1f1f1;
+    padding: 3px;
+    margin-top: 5px;
+    border: 0;
+    height: 25px;
+
+}
+textarea{
+    padding: 15px;
+    border: 0;
+    resize: none;
+    background-color: #f1f1f1;
+    height: 150px;
+    overflow: hidden;
+}
+
+
 .goods-price{
     text-transform: uppercase;
     font-weight: bold;
@@ -945,6 +966,20 @@ a.to-cart{
 a.to-cart:hover{
     background-color: #E6006F;
 }
+a.to-favourites{
+    float: left;
+    display: block;
+    color:black;
+    padding: 2px 15px;
+}
+a.to-favourites:hover{
+    background-color: #E6006F;
+    color: #FFF;
+}
+a.to-favourites > i{
+    font-size: 1.7em;
+}
+
 .text-head{
     padding: 15px;
     text-align: left;
@@ -1008,6 +1043,10 @@ a.to-cart:hover{
 .two-col-block__left > .simple-text{
     text-align: center;
 }
+.two-col-block__right {
+    flex-shrink:2;
+}
+
 .numeric-text-head{
     font-size: 2em;
     color: #c9c9c9;
@@ -1053,16 +1092,26 @@ a.to-cart:hover{
     background-color: #BABABA;
 
 }
-.open-sub-menu{
-
-}
-
-.open-sub-menu i{
-    top: 2px;
+.open-sub-menu  i{
+    float: right;
     position: relative;
     font-size: 1.2em;
 }
+.pagination{
+    margin-top: 50px;
+}
 
+.pagination a{
+    font-size: 1.2em;
+    padding: 5px 10px;
+    background-color: #E4E4E4;
+    color: #1C4573;
+    text-decoration: none;
+}
+.pagination a:hover{
+    background-color: #1C4573;
+    color: #fff;
+}
 
 /* ----------------Global ---------------------------- */
 
@@ -1124,7 +1173,6 @@ a.to-cart:hover{
 .modal-form-text-input {
     font-weight: bold;
     margin-top: 10px;
-
 }
 
 .modal-form-text-input > p {

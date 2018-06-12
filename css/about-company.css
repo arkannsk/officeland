@@ -1,0 +1,12 @@
+.about-company .two-col-block{
+    background-color: #fff;
+    margin: 0;
+}
+
+.about-company .two-col-block__right{
+    flex-shrink: 2.6;
+}
+.about-company .big-text-head{
+    padding: 20px 40px;
+    font-size: 1.35em;
+}
