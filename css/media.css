@@ -115,6 +115,13 @@
     .mobile-menu-bottom a > img {
         width: 29px;
     }
+    .bread-crumbs{
+        font-size: 1.1em;
+    }
+    .bread-crumbs a{
+        padding: 5px;
+        display: inline-block;
+    }
 
     .middle {
         display: flex;
@@ -173,7 +180,7 @@
         display: none;
     }
 
-    .middle-right > .middle-right-goods-slider {
+    .middle-right  .middle-right-goods-slider {
         width: auto;
     }
 
@@ -201,6 +208,13 @@
     .middle-prefooter-right {
         width: auto;
         margin: 0;
+    }
+    .single-goods{
+        flex-direction: column;
+    }
+
+    .single-goods__right{
+        margin-left: 0;
     }
 
     .footer {

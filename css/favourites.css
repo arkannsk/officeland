@@ -37,7 +37,6 @@
     margin-top: 15px;
     min-width: 168px;
 
-
 }
 .favourites__item__delete-from-favourites{
     float: right;
@@ -67,6 +66,6 @@
     margin-top: 7px;
     margin-left: 5px;
     background-color: #1C4573;
-    padding: 0 25px;
+    padding: 4px 25px;
     float: left;
 }

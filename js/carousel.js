@@ -25,7 +25,7 @@ $(function () {
                 loop: true
             },
             1197: {
-                margin: 10,
+                margin: 15,
                 autoWidth: true,
                 autoHeight: true,
                 loop: true

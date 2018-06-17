@@ -1,13 +1,4 @@
-.bread-crumbs{
-    font-size: 0.70em;
-}
-.bread-crumbs a{
-    color: #1C4573;
-    text-decoration: none;
-}
-.bread-crumbs a:hover{
-    text-decoration: underline;
-}
+
 .goods-catalog{
     display: flex;
     flex-direction: row;
@@ -35,7 +26,7 @@ goods-catalog-item > img{
 .goods-catalog-item__description{
     text-align: left;
     font-size: 0.8em;
-    height: 22px;
+    height: 21px;
     overflow: hidden;
     display: block;
     text-decoration: none;
